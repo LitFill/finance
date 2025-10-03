@@ -1,2 +1,2 @@
-# Abaikan file laporan HTML yang dibuat otomatis
-*.html
+# Abaikan direktori laporan yang dibuat otomatis
+/laporan/

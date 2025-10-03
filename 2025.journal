@@ -5,7 +5,7 @@
 account assets       ; type:A, money you own. 2+ spaces are required before the ;.
 account liabilities  ; type:L, money you owe to others
 account equity       ; type:E, equal to A - L (not used much in personal finance)
-account revenues     ; type:R, revenue/income categories
+account income       ; type:R, revenue/income categories
 account expenses     ; type:X, expense categories
 
 ; Declare commodities/currencies and their decimal mark, digit grouping,
