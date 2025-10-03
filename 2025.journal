@@ -12,4 +12,21 @@ account expenses     ; type:X, expense categories
 ; number of decimal places..
 
 commodity $1000.00
-commodity 1.000,00 EUR
+commodity Rp 1.000,00
+
+2025/10/01 Saldo Awal (Initial Balance)
+    assets:bank:bri                     Rp 987.598,00   ; Debit (Masuk ke Aset)
+    assets:cash                         Rp 648.000      ; Debit (Masuk ke Aset)
+    equity:duitawal                                     ; hledger akan mengisi selisihnya
+
+2025/10/02 Transfer Kiriman
+    assets:bank:bri                     Rp 500.000
+    income:kiriman
+
+2025/10/03 Mbayar Wisuda
+    expenses:pendidikan:wisuda          Rp 500.000
+    assets:bank:bri
+
+2025-10-03 Jajan: Onigiri, Combro gepeng, Roti Pizza
+    expenses:makan:jajan                Rp 7.000
+    assets:cash                         Rp -7.000
