@@ -30,3 +30,14 @@ commodity Rp 1.000,00
 2025-10-03 Jajan: Onigiri, Combro gepeng, Roti Pizza
     expenses:makan:jajan                Rp 7.000
     assets:cash                         Rp -7.000
+
+2025-10-3 Jajan: Milku
+    expenses:makan:jajan                Rp 4.000
+    assets:receh                        Rp 1.000
+    assets:cash
+
+2025-10-03 Self | Duit nemu nang sak
+    assets:receh                                                                                                 Rp 3500
+    assets:cash                                                                                                 Rp 16000
+    equity:duit
+
