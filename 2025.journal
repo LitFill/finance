@@ -45,3 +45,7 @@ commodity Rp 1.000,00
     assets:receh                                                                                                 Rp 1000
     equity:duit
 
+2025-10-04 * Sanah 5 | Syukuran ps rapat ng zawiyah
+    expenses:makan:syukuran                                                                                     Rp 50000
+    assets:cash
+
