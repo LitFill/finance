@@ -41,3 +41,7 @@ commodity Rp 1.000,00
     assets:cash                                                                                                 Rp 16000
     equity:duit
 
+2025-10-04 * Self | Duit nemu ng ngisor sorban sajadah
+    assets:receh                                                                                                 Rp 1000
+    equity:duit
+
