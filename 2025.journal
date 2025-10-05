@@ -49,3 +49,11 @@ commodity Rp 1.000,00
     expenses:makan:syukuran                                                                                     Rp 50000
     assets:cash
 
+2025-10-05 * Koperasi | Jajan: nutri boost jeruk
+    expenses:makan:jajan                                                                                         Rp 7000
+    assets:cash
+
+2025-10-04 ! Bendahara Syukuran | Mbayar urunan Syukuran
+    liabilities:batir:rifai                                                                                     Rp 50000
+    assets:cash
+
