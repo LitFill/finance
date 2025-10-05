@@ -14,38 +14,52 @@ account expenses     ; type:X, expense categories
 commodity $1000.00
 commodity Rp 1.000,00
 
-2025/10/01 Saldo Awal (Initial Balance)
-    assets:bank:bri                     Rp 987.598,00   ; Debit (Masuk ke Aset)
-    assets:cash                         Rp 648.000      ; Debit (Masuk ke Aset)
-    equity:duitawal                                     ; hledger akan mengisi selisihnya
+2025-10-01 * Saldo Awal (Initial Balance)
+    assets:bank:bri    Rp 987.598,00  ; Debit (Masuk ke Aset)
+    assets:cash          Rp 648.000,  ; Debit (Masuk ke Aset)
+    equity:duitawal                   ; hledger akan mengisi selisihnya
 
-2025/10/02 Transfer Kiriman
-    assets:bank:bri                     Rp 500.000
+2025-10-02 * Transfer Kiriman
+    assets:bank:bri     Rp 500.000,
     income:kiriman
 
-2025/10/03 Mbayar Wisuda
-    expenses:pendidikan:wisuda          Rp 500.000
+2025-10-03 * Mbayar Wisuda
+    expenses:pendidikan:wisuda     Rp 500.000,
     assets:bank:bri
 
-2025-10-03 Jajan: Onigiri, Combro gepeng, Roti Pizza
-    expenses:makan:jajan                Rp 7.000
-    assets:cash                         Rp -7.000
+2025-10-03 * Jajan: Onigiri, Combro gepeng, Roti Pizza
+    expenses:makan:jajan       Rp 7.000,
+    assets:cash               Rp -7.000,
 
-2025-10-3 Jajan: Milku
-    expenses:makan:jajan                Rp 4.000
-    assets:receh                        Rp 1.000
+2025-10-03 * Jajan: Milku
+    expenses:makan:jajan       Rp 4.000,
+    assets:receh               Rp 1.000,
     assets:cash
 
-2025-10-03 Self | Duit nemu nang sak
-    assets:receh                                                                                                 Rp 3500
-    assets:cash                                                                                                 Rp 16000
+2025-10-03 * Self | Duit nemu nang sak
+    assets:receh       Rp 3.500,
+    assets:cash       Rp 16.000,
     equity:duit
 
 2025-10-04 * Self | Duit nemu ng ngisor sorban sajadah
-    assets:receh                                                                                                 Rp 1000
+    assets:receh       Rp 1.000,
     equity:duit
 
 2025-10-04 * Sanah 5 | Syukuran ps rapat ng zawiyah
-    expenses:makan:syukuran                                                                                     Rp 50000
+    expenses:makan:syukuran      Rp 50.000,
     assets:cash
+
+2025-10-04 ! Bendahara Syukuran | Mbayar urunan Syukuran
+    liabilities:batir:rifai      Rp 50.000,
+    assets:cash
+
+2025-10-05 * Koperasi | Jajan: nutri boost jeruk
+    expenses:makan:jajan       Rp 7.000,
+    assets:cash
+
+2025-10-05 * Shopee | peci anyar go wisuda dan pewangi ruangan
+    expenses:pakaian:peci hitam                   Rp 120.000,
+    expenses:utility:pewangi ruangan Glade    2 @@ Rp 19.660,
+    expenses:shopee:admin                         Rp -15.425,
+    assets:bank:bri
 
