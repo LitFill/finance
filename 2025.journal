@@ -17,6 +17,7 @@ commodity Rp 1.000,00
 2025-10-01 * Saldo Awal (Initial Balance)
     assets:bank:bri    Rp 987.598,00  ; Debit (Masuk ke Aset)
     assets:cash          Rp 648.000,  ; Debit (Masuk ke Aset)
+    income:kiriman     Rp -987.598,
     equity:duitawal                   ; hledger akan mengisi selisihnya
 
 2025-10-02 * Transfer Kiriman
@@ -49,17 +50,46 @@ commodity Rp 1.000,00
     expenses:makan:syukuran      Rp 50.000,
     assets:cash
 
-2025-10-04 ! Bendahara Syukuran | Mbayar urunan Syukuran
-    liabilities:batir:rifai      Rp 50.000,
+2025-10-04 * Bendahara Syukuran | Mbayar urunan Syukuran
+    liabilities:batir:rifai                       Rp 50.000,
     assets:cash
 
 2025-10-05 * Koperasi | Jajan: nutri boost jeruk
     expenses:makan:jajan       Rp 7.000,
     assets:cash
 
-2025-10-05 * Shopee | peci anyar go wisuda dan pewangi ruangan
-    expenses:pakaian:peci hitam                   Rp 120.000,
-    expenses:utility:pewangi ruangan Glade    2 @@ Rp 19.660,
-    expenses:shopee:admin                         Rp -15.425,
+; 2025-10-05 * Shopee | peci anyar go wisuda dan pewangi ruangan
+;     expenses:pakaian:peci hitam                   Rp 120.000,
+;     expenses:utility:pewangi ruangan Glade    2 @@ Rp 19.660,
+;     expenses:shopee:admin                         Rp -15.425,
+;     assets:bank:bri
+
+2025-10-05 * Telkomsel | Kuota: Mama 25Gb, Bapak 20Gb
+    expenses:kuota:mama                                                                                         Rp 65000
+    expenses:kuota:bapak                                                                                        Rp 50000
     assets:bank:bri
+
+2025-10-05 * Bendahara Syukuran | Mbayar urunan Syukuran
+    expenses:makan:syukuran                         Rp 50000
+    liabilities:batir:rifai
+
+2025-10-05 * Percetakan Sampang | Nyetak Naskah Revisi
+    expenses:pendidikan:revisi skrisi               Rp 21500
+    assets:cash
+
+2025-10-05 * Bakul Bakmi | Bakmi sebelah pasar sampang
+    expenses:makan                                  Rp 15000
+    assets:cash
+
+2025-10-05 * Koperasi | Jajan: Es Capcin
+    expenses:makan:jajan                            Rp 10000
+    assets:cash
+
+2025-10-06 * Koperasi | Jajan: nasi bakar, molen ×2
+    expenses:makan:jajan                             Rp 5000
+    assets:cash
+
+2025-10-06 * Koperasi | Jajan: Nipis Madu
+    expenses:makan:jajan                             Rp 5000
+    assets:cash
 
