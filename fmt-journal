@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# --- Function for usage message ---
+usage() {
+    echo "Usage: $0 [-o <output-file>] <journal-file>" >&2
+    exit 1
+}
+
+# --- Default values ---
+output_file=""
+input_file=""
+
+# --- Function for tldr-style help ---
+tldr_help() {
+    cat << EOF
+fmt-journal
+
+Format an hledger journal file by printing its header and formatted body.
+
+- View formatted journal in the terminal (stdout):
+  ./fmt-journal <journal-file>
+
+- Save formatted output to a new file:
+  ./fmt-journal <journal-file> > <new-file.journal>
+
+- Overwrite the original file safely (in-place formatting):
+  ./fmt-journal -o <journal-file> <journal-file>
+
+EOF
+    exit 0
+}
+
+# --- Argument Parsing ---
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -o)
+            if [[ -n "$2" ]]; then
+                output_file="$2"
+                shift 2
+            else
+                echo "Error: -o requires a filename." >&2
+                usage
+            fi
+            ;;
+        --tldr)
+            tldr_help
+            ;;
+        -h|--help)
+            usage
+            ;;
+        -*)
+            echo "Error: Unknown option '$1'" >&2
+            usage
+            ;;
+        *)
+            if [[ -z "$input_file" ]]; then
+                input_file="$1"
+                shift
+            else
+                echo "Error: Input file specified more than once." >&2
+                usage
+            fi
+            ;;
+    esac
+done
+
+# --- Validation ---
+if [[ -z "$input_file" ]]; then
+    echo "Error: No input file specified." >&2
+    usage
+fi
+
+if [[ ! -f "$input_file" ]]; then
+    echo "Error: Input file not found: $input_file" >&2
+    exit 1
+fi
+
+
+# --- Core Logic ---
+
+# Create a temporary file for hledger's raw output
+tmp_hledger_out=$(mktemp)
+trap 'rm -f "$tmp_hledger_out"' EXIT
+
+# Format the journal to the temporary file
+hledger print -f "$input_file" -o "$tmp_hledger_out"
+
+# Get the header (first 16 lines) from the input file
+header=$(head -n 16 "$input_file")
+
+# --- Output Handling ---
+if [[ -n "$output_file" ]]; then
+    # To handle in-place editing safely, we build the full output in a
+    # separate temp file and then move it into place.
+    tmp_final_out=$(mktemp)
+    trap 'rm -f "$tmp_hledger_out" "$tmp_final_out"' EXIT # Update trap
+
+    # Build the final output
+    printf "%s\n" "$header" > "$tmp_final_out"
+    cat "$tmp_hledger_out" >> "$tmp_final_out"
+
+    # Move the final output to the destination
+    mv "$tmp_final_out" "$output_file"
+else
+    # Output to stdout
+    printf "%s\n" "$header"
+    cat "$tmp_hledger_out"
+fi
