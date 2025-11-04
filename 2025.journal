@@ -13,19 +13,22 @@ account expenses     ; type:X, expense categories
 
 commodity $1000.00
 commodity Rp 1.000,00
+
+;; Transaction posts
 2025-10-01 * Saldo Awal (Initial Balance)
-    assets:bank:bri    Rp 987.598,00  ; Debit (Masuk ke Aset)
-    assets:cash          Rp 648.000,  ; Debit (Masuk ke Aset)
-    income:kiriman      Rp -987.598,
-    equity:duitawal                   ; hledger akan mengisi selisihnya
+2025-10-01 * Saldo Awal (Initial Balance)
+    assets:bank:bri     Rp 987.598,00  ; Debit (Masuk ke Aset)
+    assets:cash           Rp 648.000,  ; Debit (Masuk ke Aset)
+    income:kiriman       Rp -987.598,
+    equity:duitawal    Rp -648.000,00  ; hledger akan mengisi selisihnya
 
 2025-10-02 * Transfer Kiriman
     assets:bank:bri     Rp 500.000,
-    income:kiriman
+    income:kiriman     Rp -500.000,
 
 2025-10-03 * Mbayar Wisuda
     expenses:pendidikan:wisuda     Rp 500.000,
-    assets:bank:bri
+    assets:bank:bri               Rp -500.000,
 
 2025-10-03 * Jajan: Onigiri, Combro gepeng, Roti Pizza
     expenses:makan:jajan       Rp 7.000,
@@ -34,63 +37,63 @@ commodity Rp 1.000,00
 2025-10-03 * Jajan: Milku
     expenses:makan:jajan       Rp 4.000,
     assets:receh               Rp 1.000,
-    assets:cash
+    assets:cash               Rp -5.000,
 
 2025-10-03 * Self | Duit nemu nang sak
     assets:receh       Rp 3.500,
     assets:cash       Rp 16.000,
-    equity:duit
+    equity:duit      Rp -19.500,
 
 2025-10-04 * Self | Duit nemu ng ngisor sorban sajadah
     assets:receh       Rp 1.000,
-    equity:duit
+    equity:duit       Rp -1.000,
 
 2025-10-04 * Sanah 5 | Syukuran ps rapat ng zawiyah
     expenses:makan:syukuran      Rp 50.000,
-    assets:cash
+    assets:cash                 Rp -50.000,
 
 2025-10-04 * Bendahara Syukuran | Mbayar urunan Syukuran
     liabilities:batir:rifai      Rp 50.000,
-    assets:cash
+    assets:cash                 Rp -50.000,
 
 2025-10-05 * Koperasi | Jajan: nutri boost jeruk
     expenses:makan:jajan       Rp 7.000,
-    assets:cash
+    assets:cash               Rp -7.000,
 
 2025-10-05 * Telkomsel | Kuota: Mama 25Gb, Bapak 20Gb
     expenses:kuota:mama       Rp 65.000,
     expenses:kuota:bapak      Rp 50.000,
-    assets:bank:bri
+    assets:bank:bri         Rp -115.000,
 
 2025-10-05 * Bendahara Syukuran | Mbayar urunan Syukuran
     expenses:makan:syukuran      Rp 50.000,
-    liabilities:batir:rifai
+    liabilities:batir:rifai     Rp -50.000,
 
 2025-10-05 * Percetakan Sampang | Nyetak Naskah Revisi
     expenses:pendidikan:revisi skrisi      Rp 21.500,
-    assets:cash
+    assets:cash                           Rp -21.500,
 
 2025-10-05 * Bakul Bakmi | Bakmi sebelah pasar sampang
     expenses:makan      Rp 15.000,
-    assets:cash
+    assets:cash        Rp -15.000,
 
 2025-10-05 * Koperasi | Jajan: Es Capcin
     expenses:makan:jajan      Rp 10.000,
-    assets:cash
+    assets:cash              Rp -10.000,
 
 2025-10-06 * Koperasi | Jajan: nasi bakar, molen ×2
     expenses:makan:jajan       Rp 5.000,
-    assets:cash
+    assets:cash               Rp -5.000,
 
 2025-10-06 * Koperasi | Jajan: Nipis Madu
     expenses:makan:jajan       Rp 5.000,
-    assets:cash
+    assets:cash               Rp -5.000,
 
 2025-11-03 * Penyesuaian Saldo (Recounting)
     assets:bank:bri    Rp -718.035,00
     assets:cash         Rp 436.500,00
     assets:receh          Rp 7.500,00
-    equity:recount
+    equity:recount      Rp 274.035,00
 
 2025-11-03 * Shoppe Pay | Ahkam membayar kredit kitab ihya
     income:transfer:ahkam              Rp -653.000,00
