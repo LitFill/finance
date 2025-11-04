@@ -1,43 +1,13 @@
 [
-  [
-    [
-      "liabilities:batir:udin",
-      "liabilities:batir:udin",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": -5300000,
-            "decimalPlaces": 2,
-            "floatingPoint": -53000
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ]
-  ],
+  [],
   [
     {
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -5300000,
+        "decimalMantissa": 0,
         "decimalPlaces": 2,
-        "floatingPoint": -53000
+        "floatingPoint": 0
       },
       "astyle": {
         "ascommodityside": "L",

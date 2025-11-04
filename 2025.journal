@@ -121,3 +121,8 @@ commodity Rp 1.000,00
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
 
+2025-11-04 Udin | Mbayar Hutang
+    liabilities:batir:udin     Rp 53.000,00
+    assets:cash               Rp -52.000,00
+    assets:receh               Rp -1.000,00
+
