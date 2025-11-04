@@ -16,7 +16,6 @@ commodity Rp 1.000,00
 
 ;; Transaction posts
 2025-10-01 * Saldo Awal (Initial Balance)
-2025-10-01 * Saldo Awal (Initial Balance)
     assets:bank:bri     Rp 987.598,00  ; Debit (Masuk ke Aset)
     assets:cash           Rp 648.000,  ; Debit (Masuk ke Aset)
     income:kiriman       Rp -987.598,
