@@ -1,0 +1,116 @@
+[
+  [
+    [
+      "assets:bank:bri",
+      "assets:bank:bri",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 5431800,
+            "decimalPlaces": 2,
+            "floatingPoint": 54318
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "assets:cash",
+      "assets:cash",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 84400000,
+            "decimalPlaces": 2,
+            "floatingPoint": 844000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "assets:receh",
+      "assets:receh",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1400000,
+            "decimalPlaces": 2,
+            "floatingPoint": 14000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    {
+      "acommodity": "Rp",
+      "acost": null,
+      "aquantity": {
+        "decimalMantissa": 91231800,
+        "decimalPlaces": 2,
+        "floatingPoint": 912318
+      },
+      "astyle": {
+        "ascommodityside": "L",
+        "ascommodityspaced": true,
+        "asdecimalmark": ",",
+        "asdigitgroups": [
+          ".",
+          [
+            3
+          ]
+        ],
+        "asprecision": 2,
+        "asrounding": "HardRounding"
+      }
+    }
+  ]
+]
+

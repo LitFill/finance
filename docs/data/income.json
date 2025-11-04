@@ -1,0 +1,87 @@
+[
+  [
+    [
+      "income:kiriman",
+      "income:kiriman",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -500000,
+            "decimalPlaces": 0,
+            "floatingPoint": -500000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "income:transfer:ahkam",
+      "income:transfer:ahkam",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -65300000,
+            "decimalPlaces": 2,
+            "floatingPoint": -653000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    {
+      "acommodity": "Rp",
+      "acost": null,
+      "aquantity": {
+        "decimalMantissa": -115300000,
+        "decimalPlaces": 2,
+        "floatingPoint": -1153000
+      },
+      "astyle": {
+        "ascommodityside": "L",
+        "ascommodityspaced": true,
+        "asdecimalmark": ",",
+        "asdigitgroups": [
+          ".",
+          [
+            3
+          ]
+        ],
+        "asprecision": 2,
+        "asrounding": "HardRounding"
+      }
+    }
+  ]
+]
+
