@@ -38,9 +38,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 84400000,
+            "decimalMantissa": 83900000,
             "decimalPlaces": 2,
-            "floatingPoint": 844000
+            "floatingPoint": 839000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -93,9 +93,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 91231800,
+        "decimalMantissa": 90731800,
         "decimalPlaces": 2,
-        "floatingPoint": 912318
+        "floatingPoint": 907318
       },
       "astyle": {
         "ascommodityside": "L",

@@ -117,3 +117,7 @@ commodity Rp 1.000,00
     assets:receh                Rp 1.000,00
     assets:cash               Rp -81.000,00
 
+2025-11-04 * Koperasi | Jajan : spring roll, fishcake pedas
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
