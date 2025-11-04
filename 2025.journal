@@ -92,3 +92,21 @@ commodity Rp 1.000,00
     assets:receh          Rp 7.500,00
     equity:recount
 
+2025-11-03 * Shoppe Pay | Ahkam membayar kredit kitab ihya
+    income:transfer:ahkam              Rp -653.000,00
+    expenses:pendidikan:kitab ahkam     Rp 652.522,00
+    assets:bank:bri                         Rp 478,00
+
+2025-11-04 * Self | Hutang ke Udin untuk check-out Shoppe
+    liabilities:utang:udin          Rp -53.000,00
+    expenses:bank:admin transfer      Rp 3.000,00
+    assets:bank:bri                  Rp 50.000,00
+
+2025-11-04 * Shoppe | Cover motor, Sarung tangan, Keychains 2, Bantal keyboard
+    expenses:motor:aksesoris         Rp 88.127,00
+    expenses:hobi:rhythm game        Rp 17.006,00
+    expenses:hobi:vtuber             Rp 16.778,00
+    expenses:hobi:vtuber             Rp 11.185,00
+    expenses:komputer:aksesoris      Rp 17.627,00
+    assets:bank:bri                Rp -150.723,00
+
