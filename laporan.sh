@@ -25,4 +25,19 @@ hledger cf -f "$JOURNAL_FILE" -o docs/cashflow.html
 # 4. Laporan Register (Semua Transaksi)
 hledger reg -f "$JOURNAL_FILE" -o docs/register.html
 
+# 5. Laporan Neraca Aset
+hledger bal assets -f "$JOURNAL_FILE" -o docs/balance-assets.html
+
+# 6. Laporan Neraca Kewajiban
+hledger bal liabilities -f "$JOURNAL_FILE" -o docs/balance-liabilities.html
+
+# 7. Laporan Neraca Ekuitas
+hledger bal equity -f "$JOURNAL_FILE" -o docs/balance-equity.html
+
+# 8. Laporan Pendapatan Bulanan
+hledger bal income --monthly -f "$JOURNAL_FILE" -o docs/income-monthly.html
+
+# 9. Laporan Pengeluaran Bulanan
+hledger bal expenses --monthly -f "$JOURNAL_FILE" -o docs/expenses-monthly.html
+
 echo "Semua laporan telah berhasil dibuat."
