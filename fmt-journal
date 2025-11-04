@@ -87,8 +87,8 @@ trap 'rm -f "$tmp_hledger_out"' EXIT
 # Format the journal to the temporary file
 hledger print -x -f "$input_file" -o "$tmp_hledger_out"
 
-# Get the header (first 18 lines) from the input file
-header=$(head -n 18 "$input_file")
+# Get the header (first 17 lines) from the input file
+header=$(head -n 17 "$input_file")
 
 # --- Output Handling ---
 if [[ -n "$output_file" ]]; then
