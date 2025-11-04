@@ -40,4 +40,12 @@ hledger bal income --monthly -f "$JOURNAL_FILE" -o docs/income-monthly.html
 # 9. Laporan Pengeluaran Bulanan
 hledger bal expenses --monthly -f "$JOURNAL_FILE" -o docs/expenses-monthly.html
 
-echo "Semua laporan telah berhasil dibuat."
+# 10. Generate JSON data
+echo "Membuat file data JSON..."
+hledger bal assets -f "$JOURNAL_FILE" --output-format=json > docs/data/balance-assets.json
+hledger bal liabilities -f "$JOURNAL_FILE" --output-format=json > docs/data/balance-liabilities.json
+hledger bal income -f "$JOURNAL_FILE" --output-format=json > docs/data/income.json
+hledger bal expenses -f "$JOURNAL_FILE" --output-format=json > docs/data/expenses.json
+
+
+echo "Semua laporan dan file data telah berhasil dibuat."
