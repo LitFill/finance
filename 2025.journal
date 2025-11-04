@@ -3,6 +3,9 @@
 ; Write at least 2 spaces before the ; comments.
 
 account assets       ; type:A, money you own. 2+ spaces are required before the ;.
+account assets:bank:bri    ; type:C
+account assets:cash        ; type:C
+account assets:receh       ; type:C
 account liabilities  ; type:L, money you owe to others
 account equity       ; type:E, equal to A - L (not used much in personal finance)
 account income       ; type:R, revenue/income categories
