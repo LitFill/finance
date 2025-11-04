@@ -14,15 +14,15 @@ fi
 echo "Membuat laporan dari $JOURNAL_FILE..."
 
 # 1. Laporan Neraca (Balance Sheet)
-hledger bal -f "$JOURNAL_FILE" -o laporan/balance.html
+hledger bal -f "$JOURNAL_FILE" -o docs/balance.html
 
 # 2. Laporan Laba Rugi (Income Statement)
-hledger is -f "$JOURNAL_FILE" -o laporan/income.html
+hledger is -f "$JOURNAL_FILE" -o docs/income.html
 
 # 3. Laporan Arus Kas (Cash Flow)
-hledger cf -f "$JOURNAL_FILE" -o laporan/cashflow.html
+hledger cf -f "$JOURNAL_FILE" -o docs/cashflow.html
 
 # 4. Laporan Register (Semua Transaksi)
-hledger reg -f "$JOURNAL_FILE" -o laporan/register.html
+hledger reg -f "$JOURNAL_FILE" -o docs/register.html
 
 echo "Semua laporan telah berhasil dibuat."

@@ -80,15 +80,29 @@ fi
 
 # --- Core Logic ---
 
-# Create a temporary file for hledger's raw output
+# Find the line number of the first transaction (the first line starting with a date).
+# If no transaction is found, it will process the whole file as header.
+first_txn_line=$(grep -n -m 1 '^[0-9]\{4\}-' "$input_file" | cut -d: -f1)
+
+# Separate header and body
+if [[ -z "$first_txn_line" ]]; then
+    # No transactions found, treat whole file as header
+    header=$(cat "$input_file")
+    body=""
+else
+    header_line_count=$((first_txn_line - 1))
+    header=$(head -n "$header_line_count" "$input_file")
+    body=$(tail -n +$first_txn_line "$input_file")
+fi
+
+# Create a temporary file for hledger's formatted output
 tmp_hledger_out=$(mktemp)
 trap 'rm -f "$tmp_hledger_out"' EXIT
 
-# Format the journal to the temporary file
-hledger print -x -f "$input_file" -o "$tmp_hledger_out"
+# Format only the body of the journal to the temporary file
+# If body is empty, this will create an empty temp file.
+echo "$body" | hledger print -x -f - -o "$tmp_hledger_out"
 
-# Get the header (first 17 lines) from the input file
-header=$(head -n 17 "$input_file")
 
 # --- Output Handling ---
 if [[ -n "$output_file" ]]; then
@@ -97,14 +111,22 @@ if [[ -n "$output_file" ]]; then
     tmp_final_out=$(mktemp)
     trap 'rm -f "$tmp_hledger_out" "$tmp_final_out"' EXIT # Update trap
 
-    # Build the final output
-    printf "%s\n" "$header" > "$tmp_final_out"
+    # Build the final output, ensuring a single blank line between header and body
+    printf "%s" "$header" > "$tmp_final_out"
+    if [[ -n "$header" && -s "$tmp_hledger_out" ]]; then
+        # Add exactly one blank line if header is not empty and body is not empty
+        printf "\n\n" >> "$tmp_final_out"
+    fi
     cat "$tmp_hledger_out" >> "$tmp_final_out"
 
     # Move the final output to the destination
     mv "$tmp_final_out" "$output_file"
 else
-    # Output to stdout
-    printf "%s\n" "$header"
+    # Output to stdout, ensuring a single blank line between header and body
+    printf "%s" "$header"
+    if [[ -n "$header" && -s "$tmp_hledger_out" ]]; then
+        # Add exactly one blank line if header is not empty and body is not empty
+        printf "\n\n"
+    fi
     cat "$tmp_hledger_out"
 fi
