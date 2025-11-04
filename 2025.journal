@@ -106,10 +106,15 @@ commodity Rp 1.000,00
     assets:bank:bri                  Rp 50.000,00
 
 2025-11-04 * Shoppe | Cover motor, Sarung tangan, Keychains 2, Bantal keyboard
-    expenses:motor:aksesoris         Rp 88.127,00
-    expenses:hobi:rhythm game        Rp 17.006,00
-    expenses:hobi:vtuber             Rp 16.778,00
-    expenses:hobi:vtuber             Rp 11.185,00
-    expenses:komputer:aksesoris      Rp 17.627,00
-    assets:bank:bri                Rp -150.723,00
+    expenses:motor:aksesoris:cover                   Rp 88.127,00
+    expenses:hobi:rhythm game:glove                  Rp 17.006,00
+    expenses:hobi:vtuber:ayame:keychain              Rp 16.778,00
+    expenses:hobi:vtuber:ayame:keychain              Rp 11.185,00
+    expenses:komputer:aksesoris:bantal keyboard      Rp 17.627,00
+    assets:bank:bri                                Rp -150.723,00
+
+2025-11-04 * Doa Ibu | Makan setelah acara Sarasehan wisudawan 2025
+    enpenses:makan:mayoran     Rp 80.000,00
+    assets:receh                Rp 1.000,00
+    assets:cash               Rp -81.000,00
 
