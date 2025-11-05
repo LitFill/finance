@@ -146,6 +146,10 @@ D Rp 1.000,00
     liabilities:batir:anas    Rp -100.000,00
     assets:bank:bri            Rp 100.000,00
 
+2025-11-05 * Doa Ibu | Makan ayam bakar + susu jahe
+    expenses:makan     Rp 15.000,00
+    assets:cash       Rp -15.000,00
+
 2025-12-10 ! Shoppe | Kitab Ahkam
     liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
     equity:kredit shoppe pay               Rp 653.000,00
