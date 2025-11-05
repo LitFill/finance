@@ -142,6 +142,10 @@ D Rp 1.000,00
     liabilities:batir:anas     Rp 100.000,00
     assets:cash               Rp -100.000,00
 
+2025-11-04 * Koperasi | Jajan: Milku coklat
+    expenses:makan:jajan     Rp 4.000,00
+    assets:cash             Rp -4.000,00
+
 2025-11-05 * Self | Anas Mbayar utang
     liabilities:batir:anas    Rp -100.000,00
     assets:bank:bri            Rp 100.000,00
