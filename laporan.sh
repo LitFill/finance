@@ -35,17 +35,29 @@ hledger bal liabilities -f "$JOURNAL_FILE" -o docs/balance-liabilities.html
 hledger bal equity -f "$JOURNAL_FILE" -o docs/balance-equity.html
 
 # 8. Laporan Pendapatan Bulanan
-hledger bal income --monthly -f "$JOURNAL_FILE" -o docs/income-monthly.html
+hledger bal income --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/income-monthly.html
+
+# 8. Laporan Pendapatan Bulanan
+hledger bal --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/balance-monthly.html
+
+# 8. Laporan Pendapatan Bulanan
+hledger bal assets --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/assets-monthly.html
 
 # 9. Laporan Pengeluaran Bulanan
-hledger bal expenses --monthly -f "$JOURNAL_FILE" -o docs/expenses-monthly.html
+hledger bal expenses --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/expenses-monthly.html
 
-# 10. Generate JSON data
+# 10. Laporan Balance Sheet bulanan
+hledger bs --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/balancesheet-monthly.html
+
+# 11. Laporan Income Statement bulanan
+hledger is --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/income-statement-monthly.html
+
+# Generate JSON data
 echo "Membuat file data JSON..."
-hledger bal assets -f "$JOURNAL_FILE" --output-format=json > docs/data/balance-assets.json
-hledger bal liabilities -f "$JOURNAL_FILE" --output-format=json > docs/data/balance-liabilities.json
-hledger bal income -f "$JOURNAL_FILE" --output-format=json > docs/data/income.json
-hledger bal expenses -f "$JOURNAL_FILE" --output-format=json > docs/data/expenses.json
+hledger bal assets      -f "$JOURNAL_FILE" -o docs/data/balance-assets.json
+hledger bal liabilities -f "$JOURNAL_FILE" -o docs/data/balance-liabilities.json
+hledger bal income      -f "$JOURNAL_FILE" -o docs/data/income.json
+hledger bal expenses    -f "$JOURNAL_FILE" -o docs/data/expenses.json
 
 
 echo "Semua laporan dan file data telah berhasil dibuat."
