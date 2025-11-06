@@ -158,6 +158,10 @@ D Rp 1.000,00
     expenses:makan     Rp 15.000,00
     assets:cash       Rp -15.000,00
 
+2025-11-06 * Koperasi | makan malam: mie cup kari, chocolatos sachet + es batu
+    expenses:makan:jajan     Rp 9.000,00
+    assets:cash             Rp -9.000,00
+
 2025-12-10 ! Shoppe | Kitab Ahkam
     liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
     equity:kredit shoppe pay               Rp 653.000,00
