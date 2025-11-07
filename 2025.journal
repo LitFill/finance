@@ -166,6 +166,14 @@ D Rp 1.000,00
     expenses:motor:cuci     Rp 10.000,00
     assets:cash            Rp -10.000,00
 
+2025-11-07 * Koperasi | Jajan: Teh tarik, fishcake
+    expenses:makan:jajan     Rp 6.000,00
+    assets:cash             Rp -6.000,00
+
+2025-11-07 * Udin | Bakso pinggir kali
+    expenses:makan:jajan     Rp 5.000,00
+    assets:receh            Rp -5.000,00
+
 2025-12-10 ! Shoppe | Kitab Ahkam
     liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
     equity:kredit shoppe pay               Rp 653.000,00
