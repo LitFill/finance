@@ -31,6 +31,9 @@ hledger bal assets -f "$JOURNAL_FILE" -o docs/balance-assets.html
 # 6. Laporan Neraca Kewajiban
 hledger bal liabilities -f "$JOURNAL_FILE" -o docs/balance-liabilities.html
 
+# 7. Laporan Neraca Aset - Kewajiban
+hledger bal assets liabilities -f "$JOURNAL_FILE" -o docs/balance-ass-lia.html
+
 # 7. Laporan Neraca Ekuitas
 hledger bal equity -f "$JOURNAL_FILE" -o docs/balance-equity.html
 
@@ -45,6 +48,9 @@ hledger bal assets --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/as
 
 # 9. Laporan Pengeluaran Bulanan
 hledger bal expenses --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/expenses-monthly.html
+
+# 7. Laporan Neraca Aset - Kewajiban Bulanan
+hledger bal assets liabilities --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/balance-ass-lia-monthly.html
 
 # 10. Laporan Balance Sheet bulanan
 hledger bs --monthly --row-total --average -f "$JOURNAL_FILE" -o docs/balancesheet-monthly.html
