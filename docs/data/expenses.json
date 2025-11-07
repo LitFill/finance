@@ -378,6 +378,35 @@
       ]
     ],
     [
+      "expenses:motor:cuci",
+      "expenses:motor:cuci",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 10000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:pendidikan:kitab ahkam",
       "expenses:pendidikan:kitab ahkam",
       0,
@@ -470,9 +499,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 182574500,
+        "decimalMantissa": 183574500,
         "decimalPlaces": 2,
-        "floatingPoint": 1825745
+        "floatingPoint": 1835745
       },
       "astyle": {
         "ascommodityside": "L",
