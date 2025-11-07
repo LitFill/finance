@@ -1,146 +1,139 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="winter">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dasbor Keuangan</title>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const formatCurrency = (amount, decimalPlaces) => {
-                    const number = amount / (10 ** decimalPlaces);
-                    return new Intl.NumberFormat(
-                        'id-ID',
-                        { style: 'currency',
-                          currency: 'IDR'
-                        }
-                    ).format(number);
-                };
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Keuangan</title>
+    <link rel="stylesheet" href="minimalist.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <span class="logo-text">Dasbor Keuangan</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="balance.html">Neraca</a></li>
+            <li><a href="income.html">Laba Rugi</a></li>
+            <li><a href="cashflow.html">Arus Kas</a></li>
+            <li><a href="register.html">Register Transaksi</a></li>
+        </ul>
+    </nav>
 
-                const fetchData = async () => {
-                    try {
-                        const [
-                            assetsRes,
-                            liabilitiesRes,
-                            incomeRes,
-                            expensesRes
-                        ] = await Promise.all([
-                            fetch('data/balance-assets.json'),
-                            fetch('data/balance-liabilities.json'),
-                            fetch('data/income.json'),
-                            fetch('data/expenses.json')
-                        ]);
-
-                        const assetsData      = await assetsRes.json();
-                        const liabilitiesData = await liabilitiesRes.json();
-                        const incomeData      = await incomeRes.json();
-                        const expensesData    = await expensesRes.json();
-
-                        const totalAssets      = assetsData[1][0].aquantity;
-                        const totalLiabilities = liabilitiesData[1][0].aquantity;
-                        const totalIncome      = incomeData[1][0].aquantity;
-                        const totalExpenses    = expensesData[1][0].aquantity;
-
-                        const setTotal = (elemId, asset) => {
-                            document.getElementById(elemId).textContent =
-                                formatCurrency(asset.decimalMantissa, asset.decimalPlaces);
-                        }
-                        setTotal('total-assets', totalAssets);
-                        setTotal('total-liabilities', totalLiabilities);
-                        setTotal('total-income', totalIncome);
-                        setTotal('total-expenses', totalExpenses);
-                    } catch (error) {
-                        console.error("Error fetching data:", error);
-                    }
-                };
-
-                fetchData();
-            });
-        </script>
-    </head>
-    <body>
-        <div class="drawer lg:drawer-open">
-            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content flex flex-col">
-                <!-- Page content here -->
-                <div class="navbar bg-base-100">
-                    <div class="flex-1">
-                        <a class="btn btn-ghost normal-case text-xl">Dasbor Keuangan</a>
-                    </div>
-                    <div class="flex-none">
-                        <label for="my-drawer-2" class="btn btn-square btn-ghost drawer-button lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="p-4">
-                    <div class="stats stats-vertical lg:stats-horizontal shadow">
-                        <div class="stat">
-                            <div class="stat-title">Total Aset</div>
-                            <div class="stat-value" id="total-assets">Loading...</div>
-                            <div class="stat-desc">Jan 1 - Des 31</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-title">Total Kewajiban</div>
-                            <div class="stat-value" id="total-liabilities">Loading...</div>
-                            <div class="stat-desc">Jan 1 - Des 31</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-title">Total Pendapatan</div>
-                            <div class="stat-value" id="total-income">Loading...</div>
-                            <div class="stat-desc">Jan 1 - Des 31</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-title">Total Pengeluaran</div>
-                            <div class="stat-value" id="total-expenses">Loading...</div>
-                            <div class="stat-desc">Jan 1 - Des 31</div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8">
-                        <div class="card bg-base-100 shadow-xl">
-                            <div class="card-body">
-                                <h2 class="card-title">Laporan Cepat</h2>
-                                <p>Pilih laporan yang ingin Anda lihat dari menu di samping.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <!-- Dashboard Section -->
+    <section class="dashboard-section" id="dashboard">
+        <h2 class="section-title">Ikhtisar Dasbor</h2>
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-title">Total Aset</div>
+                <div class="stat-value" id="total-assets">Memuat...</div>
             </div>
-            <div class="drawer-side">
-                <label for="my-drawer-2" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-80 bg-base-200 text-base-content">
-                    <!-- Sidebar content here -->
-                    <li class="menu-title">
-                        <span>Laporan</span>
-                    </li>
-                    <li><a href="balance.html">Neraca</a></li>
-                    <li><a href="income.html">Laba Rugi</a></li>
-                    <li><a href="cashflow.html">Arus Kas</a></li>
-                    <li><a href="register.html">Register Transaksi</a></li>
-                    <li class="menu-title">
-                        <span>Rincian Neraca</span>
-                    </li>
-                    <li><a href="balance-assets.html">Aset</a></li>
-                    <li><a href="balance-liabilities.html">Kewajiban</a></li>
-                    <li><a href="balance-ass-lia.html">Duit Cair Aman</a></li>
-                    <li><a href="balance-equity.html">Ekuitas</a></li>
-                    <li class="menu-title">
-                        <span>Laporan Bulanan</span>
-                    </li>
-                    <li><a href="balance-monthly.html">Neraca Bulanan</a></li>
-                    <li><a href="assets-monthly.html">Aset Bulanan</a></li>
-                    <li><a href="income-monthly.html">Pendapatan Bulanan</a></li>
-                    <li><a href="expenses-monthly.html">Pengeluaran Bulanan</a></li>
-                    <li><a href="balance-ass-lia-monthly.html">Duit Cair Aman Bulanan</a></li>
-                    <li><a href="balancesheet-monthly.html">Balance Sheet Bulanan</a></li>
-                    <li><a href="income-statement-monthly.html">Income Statement Bulanan</a></li>
-                </ul>
+
+            <div class="stat-card">
+                <div class="stat-title">Total Kewajiban</div>
+                <div class="stat-value" id="total-liabilities">Memuat...</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-title">Total Pendapatan</div>
+                <div class="stat-value" id="total-income">Memuat...</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-title">Total Pengeluaran</div>
+                <div class="stat-value" id="total-expenses">Memuat...</div>
             </div>
         </div>
-    </body>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports-section" id="reports">
+        <h2 class="section-title">Laporan & Wawasan</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3 class="info-title">Neraca Bulanan</h3>
+                <a href="balance-monthly.html" class="link">Lihat</a>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">Aset Bulanan</h3>
+                <a href="assets-monthly.html" class="link">Lihat</a>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">Pendapatan Bulanan</h3>
+                <a href="income-monthly.html" class="link">Lihat</a>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">Pengeluaran Bulanan</h3>
+                <a href="expenses-monthly.html" class="link">Lihat</a>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">Duit Cair Aman Bulanan</h3>
+                <a href="balance-ass-lia-monthly.html" class="link">Lihat</a>
+            </div>
+            <div class="info-card">
+                <h3 class="info-title">Balance Sheet Bulanan</h3>
+                <a href="balancesheet-monthly.html" class="link">Lihat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">© 2025 Dasbor Keuangan. Semua hak dilindungi undang-undang.</p>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const formatCurrency = (amount, decimalPlaces) => {
+            const number = amount / (10 ** decimalPlaces);
+            return new Intl.NumberFormat(
+                'id-ID',
+                { style: 'currency',
+                  currency: 'IDR'
+                }
+            ).format(number);
+        };
+
+        const fetchData = async () => {
+            try {
+                const [
+                    assetsRes,
+                    liabilitiesRes,
+                    incomeRes,
+                    expensesRes
+                ] = await Promise.all([
+                    fetch('data/balance-assets.json'),
+                    fetch('data/balance-liabilities.json'),
+                    fetch('data/income.json'),
+                    fetch('data/expenses.json')
+                ]);
+
+                const assetsData      = await assetsRes.json();
+                const liabilitiesData = await liabilitiesRes.json();
+                const incomeData      = await incomeRes.json();
+                const expensesData    = await expensesRes.json();
+
+                const totalAssets      = assetsData[1][0].aquantity;
+                const totalLiabilities = liabilitiesData[1][0].aquantity;
+                const totalIncome      = incomeData[1][0].aquantity;
+                const totalExpenses    = expensesData[1][0].aquantity;
+
+                const setTotal = (elemId, asset) => {
+                    document.getElementById(elemId).textContent =
+                        formatCurrency(asset.decimalMantissa, asset.decimalPlaces);
+                }
+                setTotal('total-assets', totalAssets);
+                setTotal('total-liabilities', totalLiabilities);
+                setTotal('total-income', totalIncome);
+                setTotal('total-expenses', totalExpenses);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    });
+</script>
+</body>
 </html>
