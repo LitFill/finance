@@ -18,6 +18,16 @@ commodity $1000.00
 commodity Rp 1.000,00
 D Rp 1.000,00
 
+;; Budgets
+
+~ daily
+    (expenses:makan:jajan)  Rp 5.000,00
+
+~ monthly
+    (expenses:kuota:telkomsel)  Rp 50.000,00
+    (expenses:kuota:mama)       Rp 65.000,00
+    (expenses:kuota:bapak)      Rp 50.000,00
+
 ;; Transaction posts
 
 2025-10-01 * Saldo Awal (Initial Balance)
@@ -173,6 +183,10 @@ D Rp 1.000,00
 2025-11-07 * Udin | Bakso pinggir kali
     expenses:makan:jajan     Rp 5.000,00
     assets:receh            Rp -5.000,00
+
+2025-11-08 * Koperasi | Es batu x2, Chocolatos vanila
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
 
 2025-12-10 ! Shoppe | Kitab Ahkam
     liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
