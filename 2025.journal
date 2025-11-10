@@ -16,6 +16,8 @@ account expenses     ; type:C
 
 commodity $1000.00
 commodity Rp 1.000,00
+commodity 1000. memories
+
 D Rp 1.000,00
 
 ;; Budgets
@@ -27,9 +29,10 @@ D Rp 1.000,00
     (expenses:makan)  Rp 100.000,00
 
 ~ monthly
-    (expenses:kuota:telkomsel)  Rp 50.000,00
-    (expenses:kuota:mama)       Rp 65.000,00
-    (expenses:kuota:bapak)      Rp 50.000,00
+    (expenses:kuota:telkomsel)      Rp 50.000,00
+    (expenses:kuota:mama)           Rp 65.000,00
+    (expenses:kuota:bapak)          Rp 50.000,00
+    (expenses:hobi:arcaea:premium)  200 memories
 
 ;; Transaction posts
 
@@ -86,8 +89,8 @@ D Rp 1.000,00
     liabilities:batir:rifai     Rp -50.000,
 
 2025-10-05 * Percetakan Sampang | Nyetak Naskah Revisi
-    expenses:pendidikan:revisi skrisi      Rp 21.500,
-    assets:cash                           Rp -21.500,
+    expenses:pendidikan:revisi skripsi      Rp 21.500,
+    assets:cash                            Rp -21.500,
 
 2025-10-05 * Bakul Bakmi | Bakmi sebelah pasar sampang
     expenses:makan      Rp 15.000,
@@ -105,6 +108,10 @@ D Rp 1.000,00
     expenses:makan:jajan       Rp 5.000,
     assets:cash               Rp -5.000,
 
+2025-10-10 * Shoppe | Kitab Ahkam
+    liabilities:shoppe pay:kitab ahkam    Rp -1.305.044,00
+    equity:kredit shoppe pay               Rp 1.305.044,00
+
 2025-11-03 * Penyesuaian Saldo (Recounting)
     assets:bank:bri    Rp -718.035,00
     assets:cash         Rp 436.500,00
@@ -112,9 +119,9 @@ D Rp 1.000,00
     equity:recount      Rp 274.035,00
 
 2025-11-03 * Shoppe Pay | Ahkam membayar kredit kitab ihya
-    income:transfer:ahkam              Rp -653.000,00
-    expenses:pendidikan:kitab ahkam     Rp 652.522,00
-    assets:bank:bri                         Rp 478,00
+    income:transfer:ahkam                 Rp -653.000,00
+    liabilities:shoppe pay:kitab ahkam     Rp 652.522,00
+    assets:bank:bri                            Rp 478,00
 
 2025-11-04 * Self | Hutang ke Udin untuk check-out Shoppe
     liabilities:batir:udin          Rp -53.000,00
@@ -200,7 +207,7 @@ D Rp 1.000,00
     assets:receh                Rp 500,00
     assets:cash             Rp -13.000,00
 
-2025-12-10 ! Shoppe | Kitab Ahkam
-    liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
-    equity:kredit shoppe pay               Rp 653.000,00
+2025-11-11 * Saldo awal Memories Arcaea
+    assets:arcaea:memories     450 memories
+    equity:memories           -450 memories
 

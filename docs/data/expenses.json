@@ -407,37 +407,8 @@
       ]
     ],
     [
-      "expenses:pendidikan:kitab ahkam",
-      "expenses:pendidikan:kitab ahkam",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": 65252200,
-            "decimalPlaces": 2,
-            "floatingPoint": 652522
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
-      "expenses:pendidikan:revisi skrisi",
-      "expenses:pendidikan:revisi skrisi",
+      "expenses:pendidikan:revisi skripsi",
+      "expenses:pendidikan:revisi skripsi",
       0,
       [
         {
@@ -499,9 +470,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 186924500,
+        "decimalMantissa": 121672300,
         "decimalPlaces": 2,
-        "floatingPoint": 1869245
+        "floatingPoint": 1216723
       },
       "astyle": {
         "ascommodityside": "L",
