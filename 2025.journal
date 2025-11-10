@@ -23,6 +23,9 @@ D Rp 1.000,00
 ~ daily
     (expenses:makan:jajan)  Rp 5.000,00
 
+~ weekly
+    (expenses:makan)  Rp 100.000,00
+
 ~ monthly
     (expenses:kuota:telkomsel)  Rp 50.000,00
     (expenses:kuota:mama)       Rp 65.000,00
@@ -187,6 +190,14 @@ D Rp 1.000,00
 2025-11-08 * Koperasi | Es batu x2, Chocolatos vanila
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
+
+2025-11-10 * Koperasi | Es batu x2, Chocolatos creamy choco
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
+2025-11-10 * Koperasi | Onigiri, martabak telor, roti Aoka x3 (simpanan)
+    expenses:makan:jajan     Rp 12.500,00
+    assets:cash             Rp -12.500,00
 
 2025-12-10 ! Shoppe | Kitab Ahkam
     liabilities:shoppe pay:kitab ahkam    Rp -653.000,00
