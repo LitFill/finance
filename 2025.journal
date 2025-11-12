@@ -198,6 +198,10 @@ D Rp 1.000,00
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
 
+2025-11-09 * Self | Transfer dari Lilik Hun
+    income:transfer:bri:lik hun    Rp -400.000,00
+    assets:bank:bri                 Rp 400.000,00
+
 2025-11-10 * Koperasi | Es batu x2, Chocolatos creamy choco
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
