@@ -211,3 +211,13 @@ D Rp 1.000,00
     assets:arcaea:memories     450 memories
     equity:memories           -450 memories
 
+2025-11-11 * Koperasi | Tebs
+    expenses:makan:jajan     Rp 7.000,00
+    assets:cash             Rp -7.000,00
+
+2025-11-11 * Tilik Dilah, jajan bakso
+    expenses:dilah:jajan       Rp 5.000,00
+    expenses:dilah:sangu     Rp 200.000,00
+    assets:receh              Rp -5.000,00
+    assets:cash             Rp -200.000,00
+
