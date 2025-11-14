@@ -225,3 +225,21 @@ D Rp 1.000,00
     assets:receh              Rp -5.000,00
     assets:cash             Rp -200.000,00
 
+2025-11-13 * Bakul buah | Mangga x3, Pepaya
+    expenses:makan:buah     Rp 19.000,00
+    assets:cash            Rp -19.000,00
+
+2025-11-13 * Udin | Titip rice bowl katsu
+    expenses:makan     Rp 5.000,00
+    assets:receh      Rp -1.000,00
+    assets:cash       Rp -4.000,00
+
+2025-11-13 * Koperasi | es batu segelas
+    expenses:makan:jajan     Rp 1.000,00
+    assets:cash             Rp -1.000,00
+
+2025-11-14 * Koperasi | Kenyas tape x2
+    expenses:makan:jajan     Rp 4.000,00
+    assets:receh             Rp 1.000,00
+    assets:cash             Rp -5.000,00
+

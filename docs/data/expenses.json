@@ -241,9 +241,38 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 3000000,
+            "decimalMantissa": 3500000,
             "decimalPlaces": 2,
-            "floatingPoint": 30000
+            "floatingPoint": 35000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:makan:buah",
+      "expenses:makan:buah",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1900000,
+            "decimalPlaces": 2,
+            "floatingPoint": 19000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -270,9 +299,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 9650000,
+            "decimalMantissa": 10150000,
             "decimalPlaces": 2,
-            "floatingPoint": 96500
+            "floatingPoint": 101500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -470,9 +499,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 142872300,
+        "decimalMantissa": 145772300,
         "decimalPlaces": 2,
-        "floatingPoint": 1428723
+        "floatingPoint": 1457723
       },
       "astyle": {
         "ascommodityside": "L",
