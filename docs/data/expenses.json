@@ -38,9 +38,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 1500000,
+            "decimalMantissa": 2500000,
             "decimalPlaces": 2,
-            "floatingPoint": 15000
+            "floatingPoint": 25000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -67,9 +67,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 25000000,
+            "decimalMantissa": 35000000,
             "decimalPlaces": 2,
-            "floatingPoint": 250000
+            "floatingPoint": 350000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -212,9 +212,38 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 12200000,
+            "decimalMantissa": 17900000,
             "decimalPlaces": 2,
-            "floatingPoint": 122000
+            "floatingPoint": 179000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:kuota:telkomsel",
+      "expenses:kuota:telkomsel",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 5000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 50000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -499,9 +528,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 145772300,
+        "decimalMantissa": 167472300,
         "decimalPlaces": 2,
-        "floatingPoint": 1457723
+        "floatingPoint": 1674723
       },
       "astyle": {
         "ascommodityside": "L",

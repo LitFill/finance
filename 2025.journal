@@ -243,3 +243,31 @@ D Rp 1.000,00
     assets:receh             Rp 1.000,00
     assets:cash             Rp -5.000,00
 
+2025-11-14 Telkomsel | Kuota 28Gb
+    expenses:kuota:telkomsel     Rp 50.000,00
+    assets:bank:bri             Rp -50.000,00
+
+2025-11-18 Telkomsel | Kuota mama 20 Gb
+    expenses:kuota:mama     Rp 57.000,00
+    assets:bank:bri        Rp -57.000,00
+
+2025-11-18 Anas | Anas Utang
+    liabilities:batir:anas     Rp 50.000,00
+    assets:cash               Rp -50.000,00
+
+2025-11-18 Bakul Molen | Jajan: Molen go dilah
+    expenses:dilah:jajan     Rp 10.000,00
+    assets:cash             Rp -10.000,00
+
+2025-11-18 Dilah | Nyanguni dilah
+    expenses:dilah:sangu     Rp 100.000,00
+    assets:cash             Rp -100.000,00
+
+2025-11-19 Self | Anas Mbayar utang
+    liabilities:batir:anas    Rp -50.000,00
+    assets:bank:bri            Rp 50.000,00
+
+2025-11-20 Penyesuaian Saldo (Recounting)
+    assets:cash       Rp -60.000,00
+    equity:recount     Rp 60.000,00
+
