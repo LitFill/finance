@@ -30,6 +30,35 @@
       ]
     ],
     [
+      "expenses:bank:bri:admin fee",
+      "expenses:bank:bri:admin fee",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 100000,
+            "decimalPlaces": 2,
+            "floatingPoint": 1000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:dilah:jajan",
       "expenses:dilah:jajan",
       0,
@@ -128,6 +157,35 @@
             "decimalMantissa": 2796300,
             "decimalPlaces": 2,
             "floatingPoint": 27963
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:kamar:tisu",
+      "expenses:kamar:tisu",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 10000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -328,9 +386,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 10150000,
+            "decimalMantissa": 11950000,
             "decimalPlaces": 2,
-            "floatingPoint": 101500
+            "floatingPoint": 119500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -528,9 +586,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 168572300,
+        "decimalMantissa": 171472300,
         "decimalPlaces": 2,
-        "floatingPoint": 1685723
+        "floatingPoint": 1714723
       },
       "astyle": {
         "ascommodityside": "L",
