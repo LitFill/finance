@@ -204,6 +204,35 @@
       ]
     ],
     [
+      "expenses:kamar:util:cermin",
+      "expenses:kamar:util:cermin",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 6603200,
+            "decimalPlaces": 2,
+            "floatingPoint": 66032
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:komputer:aksesoris:bantal keyboard",
       "expenses:komputer:aksesoris:bantal keyboard",
       0,
@@ -328,9 +357,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 4600000,
+            "decimalMantissa": 6600000,
             "decimalPlaces": 2,
-            "floatingPoint": 46000
+            "floatingPoint": 66000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -357,9 +386,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 1900000,
+            "decimalMantissa": 3900000,
             "decimalPlaces": 2,
-            "floatingPoint": 19000
+            "floatingPoint": 39000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -523,6 +552,35 @@
       ]
     ],
     [
+      "expenses:pendidikan:kitab",
+      "expenses:pendidikan:kitab",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1250400,
+            "decimalPlaces": 2,
+            "floatingPoint": 12504
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:pendidikan:revisi skripsi",
       "expenses:pendidikan:revisi skripsi",
       0,
@@ -579,6 +637,64 @@
           }
         }
       ]
+    ],
+    [
+      "expenses:sandang:celana",
+      "expenses:sandang:celana",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 5278200,
+            "decimalPlaces": 2,
+            "floatingPoint": 52782
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:sandang:sandal",
+      "expenses:sandang:sandal",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 4396500,
+            "decimalPlaces": 2,
+            "floatingPoint": 43965
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
     ]
   ],
   [
@@ -586,9 +702,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 171472300,
+        "decimalMantissa": 193000600,
         "decimalPlaces": 2,
-        "floatingPoint": 1714723
+        "floatingPoint": 1930006
       },
       "astyle": {
         "ascommodityside": "L",

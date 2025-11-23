@@ -1,6 +1,35 @@
 [
   [
     [
+      "liabilities:shoppe pay",
+      "liabilities:shoppe pay",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -17528300,
+            "decimalPlaces": 2,
+            "floatingPoint": -175283
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "liabilities:shoppe pay:kitab ahkam",
       "liabilities:shoppe pay:kitab ahkam",
       0,
@@ -35,9 +64,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -65252200,
+        "decimalMantissa": -82780500,
         "decimalPlaces": 2,
-        "floatingPoint": -652522
+        "floatingPoint": -827805
       },
       "astyle": {
         "ascommodityside": "L",
