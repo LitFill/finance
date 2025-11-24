@@ -9,9 +9,9 @@
           "acommodity": "memories",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 450,
+            "decimalMantissa": 250,
             "decimalPlaces": 0,
-            "floatingPoint": 450
+            "floatingPoint": 250
           },
           "astyle": {
             "ascommodityside": "R",
@@ -139,9 +139,9 @@
       "acommodity": "memories",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 450,
+        "decimalMantissa": 250,
         "decimalPlaces": 0,
-        "floatingPoint": 450
+        "floatingPoint": 250
       },
       "astyle": {
         "ascommodityside": "R",

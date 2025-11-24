@@ -117,6 +117,30 @@
       ]
     ],
     [
+      "expenses:hobi:rhythm game:arcaea:online",
+      "expenses:hobi:rhythm game:arcaea:online",
+      0,
+      [
+        {
+          "acommodity": "memories",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 200,
+            "decimalPlaces": 0,
+            "floatingPoint": 200
+          },
+          "astyle": {
+            "ascommodityside": "R",
+            "ascommodityspaced": true,
+            "asdecimalmark": ".",
+            "asdigitgroups": null,
+            "asprecision": 0,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:hobi:rhythm game:glove",
       "expenses:hobi:rhythm game:glove",
       0,
@@ -746,6 +770,23 @@
           ]
         ],
         "asprecision": 2,
+        "asrounding": "HardRounding"
+      }
+    },
+    {
+      "acommodity": "memories",
+      "acost": null,
+      "aquantity": {
+        "decimalMantissa": 200,
+        "decimalPlaces": 0,
+        "floatingPoint": 200
+      },
+      "astyle": {
+        "ascommodityside": "R",
+        "ascommodityspaced": true,
+        "asdecimalmark": ".",
+        "asdigitgroups": null,
+        "asprecision": 0,
         "asrounding": "HardRounding"
       }
     }
