@@ -317,8 +317,8 @@ D Rp 1.000,00
     assets:cash       Rp -20.000,00
 
 2025-11-23 * Lowiro | Arcaea Online resub
-    expenses:hobi:rhythm game:arcaea:online     200 memories
-    assets:arcaea:memories                     -200 memories
+    expenses:hobi:arcaea:premium     200 memories
+    assets:arcaea:memories          -200 memories
 
 2025-11-24 * Bakul Loundry | Loundry x2
     expenses:sandang:loundry     Rp 24.000,00
