@@ -280,9 +280,13 @@ D Rp 1.000,00
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
 
+2025-11-19 * Koperasi | Adem sari kaleng
+    expenses:makan:jajan     Rp 7.000,00
+    assets:cash             Rp -7.000,00
+
 2025-11-20 * Penyesuaian Saldo (Recounting)
-    assets:cash       Rp -44.000,00
-    equity:recount     Rp 44.000,00
+    assets:cash       Rp -37.000,00
+    equity:recount     Rp 37.000,00
 
 2025-11-20 * BRI | admin fee monthly
     expenses:bank:bri:admin fee     Rp 1.000,00
@@ -311,4 +315,16 @@ D Rp 1.000,00
 2025-11-22 * Sariman | Mi Ayam bakar, es teh
     expenses:makan     Rp 20.000,00  ; kroya
     assets:cash       Rp -20.000,00
+
+2025-11-24 * Bakul Loundry | Loundry x2
+    expenses:sandang:loundry     Rp 24.000,00
+    assets:cash                 Rp -24.000,00
+
+2025-11-24 * Self | Transfer dari Mama
+    income:transfer:bri    Rp -1.000.000,00
+    assets:bank:bri         Rp 1.000.000,00
+
+2025-11-24 * Koperasi | Adem sari kaleng
+    expenses:makan:jajan     Rp 7.000,00
+    assets:cash             Rp -7.000,00
 

@@ -59,6 +59,35 @@
       ]
     ],
     [
+      "income:transfer:bri",
+      "income:transfer:bri",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -100000000,
+            "decimalPlaces": 2,
+            "floatingPoint": -1000000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "income:transfer:bri:lik hun",
       "income:transfer:bri:lik hun",
       0,
@@ -93,9 +122,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -155300000,
+        "decimalMantissa": -255300000,
         "decimalPlaces": 2,
-        "floatingPoint": -1553000
+        "floatingPoint": -2553000
       },
       "astyle": {
         "ascommodityside": "L",

@@ -415,9 +415,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 11950000,
+            "decimalMantissa": 13350000,
             "decimalPlaces": 2,
-            "floatingPoint": 119500
+            "floatingPoint": 133500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -668,6 +668,35 @@
       ]
     ],
     [
+      "expenses:sandang:loundry",
+      "expenses:sandang:loundry",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 2400000,
+            "decimalPlaces": 2,
+            "floatingPoint": 24000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:sandang:sandal",
       "expenses:sandang:sandal",
       0,
@@ -702,9 +731,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 193000600,
+        "decimalMantissa": 196800600,
         "decimalPlaces": 2,
-        "floatingPoint": 1930006
+        "floatingPoint": 1968006
       },
       "astyle": {
         "ascommodityside": "L",
