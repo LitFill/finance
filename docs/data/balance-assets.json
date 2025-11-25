@@ -33,9 +33,38 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 142431800,
+            "decimalMantissa": 72431800,
             "decimalPlaces": 2,
-            "floatingPoint": 1424318
+            "floatingPoint": 724318
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "assets:bank:dana",
+      "assets:bank:dana",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 9216700,
+            "decimalPlaces": 2,
+            "floatingPoint": 92167
           },
           "astyle": {
             "ascommodityside": "L",
@@ -62,9 +91,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 2500000,
+            "decimalMantissa": 50100000,
             "decimalPlaces": 2,
-            "floatingPoint": 25000
+            "floatingPoint": 501000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -117,9 +146,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 145281800,
+        "decimalMantissa": 132098500,
         "decimalPlaces": 2,
-        "floatingPoint": 1452818
+        "floatingPoint": 1320985
       },
       "astyle": {
         "ascommodityside": "L",

@@ -170,6 +170,35 @@
       ]
     ],
     [
+      "expenses:hobi:steam",
+      "expenses:hobi:steam",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 11584900,
+            "decimalPlaces": 2,
+            "floatingPoint": 115849
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:hobi:vtuber:ayame:keychain",
       "expenses:hobi:vtuber:ayame:keychain",
       0,
@@ -547,6 +576,35 @@
       ]
     ],
     [
+      "expenses:motor:bensin",
+      "expenses:motor:bensin",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 2000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 20000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:motor:cuci",
       "expenses:motor:cuci",
       0,
@@ -755,9 +813,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 196800600,
+        "decimalMantissa": 210385500,
         "decimalPlaces": 2,
-        "floatingPoint": 1968006
+        "floatingPoint": 2103855
       },
       "astyle": {
         "ascommodityside": "L",

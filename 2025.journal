@@ -285,8 +285,8 @@ D Rp 1.000,00
     assets:cash             Rp -7.000,00
 
 2025-11-20 * Penyesuaian Saldo (Recounting)
-    assets:cash       Rp -37.000,00
-    equity:recount     Rp 37.000,00
+    assets:cash       Rp -41.000,00
+    equity:recount     Rp 41.000,00
 
 2025-11-20 * BRI | admin fee monthly
     expenses:bank:bri:admin fee     Rp 1.000,00
@@ -331,4 +331,24 @@ D Rp 1.000,00
 2025-11-24 * Koperasi | Adem sari kaleng
     expenses:makan:jajan     Rp 7.000,00
     assets:cash             Rp -7.000,00
+
+2025-11-25 SPBU | Pertamax, ke rakor
+    expenses:motor:bensin     Rp 20.000,00
+    assets:cash              Rp -20.000,00
+
+2025-11-25 Saldo Dana
+    assets:bank:dana     Rp 8.016,00
+    equity:dana         Rp -8.016,00
+
+2025-11-25 Topup Dana
+    assets:bank:dana     Rp 200.000,00
+    assets:bank:bri     Rp -200.000,00
+
+2025-11-25 Steam | Minesweeper 14 variants, Abandoned Archive
+    expenses:hobi:steam     Rp 115.849,00
+    assets:bank:dana       Rp -115.849,00
+
+2025-11-25 Mencairkan Uang
+    assets:cash         Rp 500.000,00
+    assets:bank:bri    Rp -500.000,00
 
