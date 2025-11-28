@@ -1,6 +1,64 @@
 [
   [
     [
+      "assets:cash",
+      "assets:cash",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 46300000,
+            "decimalPlaces": 2,
+            "floatingPoint": 463000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "assets:receh",
+      "assets:receh",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 350000,
+            "decimalPlaces": 2,
+            "floatingPoint": 3500
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "assets:arcaea:memories",
       "assets:arcaea:memories",
       0,
@@ -81,64 +139,6 @@
           }
         }
       ]
-    ],
-    [
-      "assets:cash",
-      "assets:cash",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": 50100000,
-            "decimalPlaces": 2,
-            "floatingPoint": 501000
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
-      "assets:receh",
-      "assets:receh",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": 350000,
-            "decimalPlaces": 2,
-            "floatingPoint": 3500
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
     ]
   ],
   [
@@ -146,9 +146,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 132098500,
+        "decimalMantissa": 128298500,
         "decimalPlaces": 2,
-        "floatingPoint": 1320985
+        "floatingPoint": 1282985
       },
       "astyle": {
         "ascommodityside": "L",
