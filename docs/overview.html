@@ -1,0 +1,122 @@
+<!-- docs/overview.html -->
+<h2 class="ui header">Gambaran Finansial Umum</h2>
+
+<!-- Main Net Worth Stat -->
+<div class="ui centered blue statistic" style="margin-bottom: 2em;">
+    <div class="value" id="overview-networth">Memuat...</div>
+    <div class="label">Total Kekayaan Bersih</div>
+</div>
+
+<div class="ui two column stackable grid">
+    <!-- Balance Sheet Column -->
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">Posisi Keuangan (Neraca)</div>
+            </div>
+            <div class="content">
+                <div class="ui two small statistics">
+                    <div class="green statistic">
+                        <div class="value" id="overview-assets">Memuat...</div>
+                        <div class="label">Total Aset</div>
+                    </div>
+                    <div class="red statistic">
+                        <div class="value" id="overview-liabilities">Memuat...</div>
+                        <div class="label">Total Kewajiban</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Income/Expense Column -->
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">Aliran Kas (Laba Rugi)</div>
+            </div>
+            <div class="content">
+                <div class="ui two small statistics">
+                    <div class="green statistic">
+                        <div class="value" id="overview-income">Memuat...</div>
+                        <div class="label">Total Pendapatan</div>
+                    </div>
+                    <div class="red statistic">
+                        <div class="value" id="overview-expenses">Memuat...</div>
+                        <div class="label">Total Pengeluaran</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Self-executing function to avoid polluting global scope
+    (function() {
+        // This check ensures the script only runs once, even if HTMX swaps it multiple times.
+        if (document.getElementById('overview-assets').textContent !== 'Memuat...') {
+            return;
+        }
+
+        const formatCurrency = (amount, decimalPlaces) => {
+            const number = amount / (10 ** decimalPlaces);
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(number);
+        };
+
+        const fetchData = async () => {
+            try {
+                const [assetsRes, liabilitiesRes, incomeRes, expensesRes] = await Promise.all([
+                    fetch('data/balance-assets.json'),
+                    fetch('data/balance-liabilities.json'),
+                    fetch('data/income.json'),
+                    fetch('data/expenses.json')
+                ]);
+
+                if (!assetsRes.ok || !liabilitiesRes.ok || !incomeRes.ok || !expensesRes.ok) {
+                    throw new Error('Gagal memuat salah satu file data JSON.');
+                }
+
+                const assetsData = await assetsRes.json();
+                const liabilitiesData = await liabilitiesRes.json();
+                const incomeData = await incomeRes.json();
+                const expensesData = await expensesRes.json();
+
+                // Extract the raw numeric values
+                const totalAssets = assetsData[1][0].aquantity;
+                const totalLiabilities = liabilitiesData[1][0].aquantity;
+                const totalIncome = incomeData[1][0].aquantity;
+                const totalExpenses = expensesData[1][0].aquantity;
+                
+                // Calculate Net Worth
+                const netWorth = {
+                    decimalMantissa: totalAssets.decimalMantissa - totalLiabilities.decimalMantissa,
+                    decimalPlaces: totalAssets.decimalPlaces // Assume same decimal places
+                };
+
+                const setTotal = (elemId, asset) => {
+                    const element = document.getElementById(elemId);
+                    if (element) {
+                        element.textContent = formatCurrency(asset.decimalMantissa, asset.decimalPlaces);
+                    }
+                };
+                
+                setTotal('overview-assets', totalAssets);
+                setTotal('overview-liabilities', totalLiabilities);
+                setTotal('overview-networth', netWorth);
+                setTotal('overview-income', totalIncome);
+                setTotal('overview-expenses', totalExpenses);
+
+            } catch (error) {
+                console.error("Error fetching overview data:", error);
+                const elements = ['overview-assets', 'overview-liabilities', 'overview-networth', 'overview-income', 'overview-expenses'];
+                elements.forEach(id => {
+                    const el = document.getElementById(id);
+                    if(el) el.textContent = "Gagal";
+                })
+            }
+        };
+
+        fetchData();
+    })();
+</script>

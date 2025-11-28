@@ -1,0 +1,222 @@
+<!-- docs/charts.html -->
+<h2 class="ui header">Grafik Finansial</h2>
+
+<div class="ui one column stackable grid">
+
+    <!-- Row for summary charts -->
+    <div class="column">
+        <div class="ui two column stackable grid">
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="content">
+                        <div class="header">Pendapatan vs Pengeluaran</div>
+                    </div>
+                    <div class="content">
+                        <canvas id="incomeExpenseChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="content">
+                        <div class="header">Aset vs Kewajiban</div>
+                    </div>
+                    <div class="content">
+                        <canvas id="assetLiabilityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Asset Allocation -->
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">Alokasi Aset</div>
+            </div>
+            <div class="content">
+                <canvas id="assetAllocationChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Income Sources -->
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">Sumber Pendapatan</div>
+            </div>
+            <div class="content">
+                <canvas id="incomeSourcesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Expense Categories -->
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="content">
+                <div class="header">Kategori Pengeluaran</div>
+            </div>
+            <div class="content">
+                <canvas id="expenseCategoriesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    (async function() {
+        // Simple check to prevent re-initialization
+        if (window.myCharts) {
+            Object.values(window.myCharts).forEach(chart => chart.destroy());
+        }
+        window.myCharts = {};
+
+        // Dynamically load Chart.js if it's not already loaded
+        if (!window.Chart) {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/chart.js';
+            document.head.appendChild(script);
+            await new Promise(resolve => script.onload = resolve);
+        }
+
+        // --- UTILITY FUNCTIONS ---
+        const getJSON = async (url) => {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to fetch ${url}`);
+            return response.json();
+        };
+
+        const getAmount = (quantity) => {
+            return quantity.decimalMantissa / (10 ** quantity.decimalPlaces);
+        };
+
+        const generateColors = (numColors) => {
+            const colors = [];
+            for (let i = 0; i < numColors; i++) {
+                const hue = (i * 360 / numColors) % 360;
+                colors.push(`hsla(${hue}, 70%, 60%, 0.8)`);
+            }
+            return colors;
+        };
+
+        // --- CHART CREATION FUNCTIONS ---
+
+        const createSummaryCharts = async () => {
+            const [assetsData, liabData, incomeData, expenseData] = await Promise.all([
+                getJSON('data/balance-assets.json'),
+                getJSON('data/balance-liabilities.json'),
+                getJSON('data/income.json'),
+                getJSON('data/expenses.json')
+            ]);
+
+            const totalAssets = getAmount(assetsData[1][0].aquantity);
+            const totalLiabilities = getAmount(liabData[1][0].aquantity);
+            const totalIncome = getAmount(incomeData[1][0].aquantity);
+            const totalExpenses = getAmount(expenseData[1][0].aquantity);
+
+            const incomeExpenseCtx = document.getElementById('incomeExpenseChart')?.getContext('2d');
+            if (incomeExpenseCtx) {
+                window.myCharts.incomeExpense = new Chart(incomeExpenseCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Pendapatan', 'Pengeluaran'],
+                        datasets: [
+                            {
+                                data: [totalIncome, totalExpenses],
+                                backgroundColor: ['#21BA45', '#DB2828']
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { position: 'top' } }
+                    }
+                });
+            }
+
+            const assetLiabilityCtx =
+                document.getElementById('assetLiabilityChart')?.getContext('2d');
+            if (assetLiabilityCtx) {
+                window.myCharts.assetLiability = new Chart(assetLiabilityCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Aset', 'Kewajiban'],
+                        datasets: [
+                            {
+                                data: [totalAssets, totalLiabilities],
+                                backgroundColor: ['#21BA45', '#DB2828']
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true } }
+                    }
+                });
+            }
+        };
+
+        const createBreakdownChart = async (url, canvasId, chartType = 'pie') => {
+            const data = await getJSON(url);
+            const accounts = data[0];
+
+            const labels = [];
+            const values = [];
+
+            for (const account of accounts) {
+                const accountName = account[0].split(':').pop(); // Get last part of the account name
+                const commodity = account[3][0].acommodity;
+                // Only include Rupiah accounts
+                if (commodity === 'Rp') {
+                    const value = getAmount(account[3][0].aquantity);
+                    labels.push(accountName);
+                    values.push(value);
+                }
+            }
+
+            const ctx = document.getElementById(canvasId)?.getContext('2d');
+            if (ctx) {
+                window.myCharts[canvasId] = new Chart(ctx, {
+                    type: chartType,
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: generateColors(labels.length),
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                                align: 'start',
+                                labels: {
+                                    padding: 10
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        };
+
+        // --- EXECUTE ---
+        try {
+            await Promise.all([
+                createSummaryCharts(),
+                createBreakdownChart('data/balance-assets.json', 'assetAllocationChart', 'pie'),
+                createBreakdownChart('data/income.json', 'incomeSourcesChart', 'pie'),
+                createBreakdownChart('data/expenses.json', 'expenseCategoriesChart', 'pie')
+            ]);
+        } catch (error) {
+            console.error("Error creating charts:", error);
+        }
+    })();
+</script>

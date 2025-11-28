@@ -21,18 +21,26 @@
         #content-display h1, #content-display h2, #content-display h3 {
             margin-top: 0;
         }
+        /* Responsive adjustments for mobile */
+        @media only screen and (max-width: 767px) {
+            .main.container {
+                padding-top: 1em;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="ui main container">
-        <div class="ui grid">
+        <div class="ui stackable grid">
             <div class="four wide column">
                 <h3 class="ui header">Laporan</h3>
                 <div class="ui vertical fluid menu">
                     <div class="item">
                         <div class="header">Laporan Umum</div>
                         <div class="menu">
+                            <a class="item" hx-get="./overview.html" hx-target="#content-display" hx-swap="innerHTML">Gambaran Umum</a>
+                            <a class="item" hx-get="./charts.html" hx-target="#content-display" hx-swap="innerHTML">Grafik</a>
                             <a class="item" hx-get="./balance.html" hx-target="#content-display" hx-swap="innerHTML">Neraca</a>
                             <a class="item" hx-get="./income.html" hx-target="#content-display" hx-swap="innerHTML">Laba Rugi</a>
                             <a class="item" hx-get="./cashflow.html" hx-target="#content-display" hx-swap="innerHTML">Arus Kas</a>
