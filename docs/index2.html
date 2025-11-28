@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Keuangan - Semantic UI</title>
+    
+    <!-- Memuat Semantic UI CSS -->
+    <link rel="stylesheet" href="./semantic.min.css" />
+    
+    <!-- Memuat HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .main.container {
+            padding-top: 2em;
+        }
+        #content-display h1, #content-display h2, #content-display h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ui main container">
+        <div class="ui grid">
+            <div class="four wide column">
+                <h3 class="ui header">Laporan</h3>
+                <div class="ui vertical fluid menu">
+                    <div class="item">
+                        <div class="header">Laporan Umum</div>
+                        <div class="menu">
+                            <a class="item" hx-get="./balance.html" hx-target="#content-display" hx-swap="innerHTML">Neraca</a>
+                            <a class="item" hx-get="./income.html" hx-target="#content-display" hx-swap="innerHTML">Laba Rugi</a>
+                            <a class="item" hx-get="./cashflow.html" hx-target="#content-display" hx-swap="innerHTML">Arus Kas</a>
+                            <a class="item" hx-get="./register.html" hx-target="#content-display" hx-swap="innerHTML">Register</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header">Laporan Bulanan</div>
+                        <div class="menu">
+                            <a class="item" hx-get="./balance-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Neraca</a>
+                            <a class="item" hx-get="./balancesheet-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Balance Sheet</a>
+                            <a class="item" hx-get="./income-statement-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Laba Rugi</a>
+                            <a class="item" hx-get="./income-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Pendapatan</a>
+                            <a class="item" hx-get="./expenses-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Pengeluaran</a>
+                            <a class="item" hx-get="./assets-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Aset</a>
+                            <a class="item" hx-get="./balance-ass-lia-monthly.html" hx-target="#content-display" hx-swap="innerHTML">Aset & Liabilitas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="twelve wide stretched column">
+                <div id="content-display" class="ui segment" style="min-height: 500px;">
+                    <h2 class="ui header">Selamat Datang</h2>
+                    <p>Pilih laporan dari menu di sebelah kiri untuk menampilkannya di sini.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Semantic UI membutuhkan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // Listen for htmx:afterSwap event on the body
+        document.body.addEventListener('htmx:afterSwap', function(event) {
+            // Find all tables within the swapped content (event.detail.target is the element where content was swapped)
+            const tables = event.detail.target.querySelectorAll('table');
+            tables.forEach(table => {
+                // Add the Semantic UI classes to each table
+                table.classList.add('ui', 'table');
+            });
+        });
+    </script>
+
+</body>
+</html>

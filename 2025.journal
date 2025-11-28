@@ -21,7 +21,7 @@ commodity 1000. memories
 
 D Rp 1.000,00
 
-;; Budgets
+;; Budgets and Forecasts
 
 ~ daily
     (expenses:makan:jajan)  Rp 5.000,00
@@ -298,8 +298,8 @@ D Rp 1.000,00
     assets:cash             Rp -7.000,00
 
 2025-11-20 * Penyesuaian Saldo (Recounting)
-    assets:cash       Rp -41.000,00
-    equity:recount     Rp 41.000,00
+    assets:cash       Rp -37.000,00
+    equity:recount     Rp 37.000,00
 
 2025-11-20 * BRI | admin fee monthly
     expenses:bank:bri:admin fee     Rp 1.000,00
