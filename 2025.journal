@@ -385,3 +385,20 @@ D Rp 1.000,00
     expenses:makan:jajan     Rp 8.000,00
     assets:cash             Rp -8.000,00
 
+2025-11-29 * Koperasi | Es batu, Cireng x2
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
+2025-11-29 * Telkomsel | Kuota mama 20 Gb
+    expenses:kuota:mama     Rp 57.000,00
+    assets:bank:bri        Rp -57.000,00
+
+2025-11-30 * Koperasi | Roti Aoka dan roti lainnya
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
+2025-11-30 * Koperasi | Es capcin x2
+    expenses:makan:jajan     Rp 6.000,00
+    assets:cash             Rp -5.000,00
+    assets:receh            Rp -1.000,00
+
