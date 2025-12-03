@@ -1,46 +1,17 @@
 [
   [
     [
-      "liabilities:shoppe pay",
-      "liabilities:shoppe pay",
+      "liabilities:batir:anas",
+      "liabilities:batir:anas",
       0,
       [
         {
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": -22528300,
+            "decimalMantissa": 5000000,
             "decimalPlaces": 2,
-            "floatingPoint": -225283
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
-      "liabilities:shoppe pay:kitab ahkam",
-      "liabilities:shoppe pay:kitab ahkam",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": -65252300,
-            "decimalPlaces": 2,
-            "floatingPoint": -652523
+            "floatingPoint": 50000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -64,9 +35,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -87780600,
+        "decimalMantissa": 5000000,
         "decimalPlaces": 2,
-        "floatingPoint": -877806
+        "floatingPoint": 50000
       },
       "astyle": {
         "ascommodityside": "L",
