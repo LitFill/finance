@@ -402,6 +402,35 @@
       ]
     ],
     [
+      "expenses:langganan:streaming:nakiri_ayame",
+      "expenses:langganan:streaming:nakiri_ayame",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 4428900,
+            "decimalPlaces": 2,
+            "floatingPoint": 44289
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:makan",
       "expenses:makan",
       0,
@@ -410,9 +439,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 8600000,
+            "decimalMantissa": 10100000,
             "decimalPlaces": 2,
-            "floatingPoint": 86000
+            "floatingPoint": 101000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -813,9 +842,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 226985500,
+        "decimalMantissa": 232914400,
         "decimalPlaces": 2,
-        "floatingPoint": 2269855
+        "floatingPoint": 2329144
       },
       "astyle": {
         "ascommodityside": "L",

@@ -402,6 +402,10 @@ D Rp 1.000,00
     assets:cash             Rp -5.000,00
     assets:receh            Rp -1.000,00
 
+2025-11-30 Google | Langganan YT Nakiri Ayame
+    expenses:langganan:streaming:nakiri_ayame     Rp 44.289,00
+    assets:bank:dana                             Rp -44.289,00
+
 2025-12-01 * Bakul Es depan MU | es capcin karo udin
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
@@ -418,4 +422,8 @@ D Rp 1.000,00
     liabilities:shoppe pay:kitab ahkam     Rp 652.523,00
     liabilities:shoppe pay                 Rp 225.283,00
     assets:bank:bri                       Rp -877.806,00
+
+2025-12-03 Doa Ibu | Makan ayam bakar + susu jahe
+    expenses:makan     Rp 15.000,00
+    assets:cash       Rp -15.000,00
 
