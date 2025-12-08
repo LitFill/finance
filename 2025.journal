@@ -402,7 +402,7 @@ D Rp 1.000,00
     assets:cash             Rp -5.000,00
     assets:receh            Rp -1.000,00
 
-2025-11-30 Google | Langganan YT Nakiri Ayame
+2025-11-30 * Google | Langganan YT Nakiri Ayame
     expenses:langganan:streaming:nakiri_ayame     Rp 44.289,00
     assets:bank:dana                             Rp -44.289,00
 
@@ -423,7 +423,29 @@ D Rp 1.000,00
     liabilities:shoppe pay                 Rp 225.283,00
     assets:bank:bri                       Rp -877.806,00
 
-2025-12-03 Doa Ibu | Makan ayam bakar + susu jahe
+2025-12-03 * Doa Ibu | Makan ayam bakar + susu jahe
     expenses:makan     Rp 15.000,00
     assets:cash       Rp -15.000,00
+
+2025-12-04 * Koperasi | Mangga Santen
+    expenses:makan:jajan     Rp 9.000,00
+    assets:cash             Rp -9.000,00
+
+2025-12-05 * Koperasi | Matcha + Es Batu
+    expenses:makan:jajan     Rp 4.000,00
+    assets:cash             Rp -5.000,00
+    assets:receh             Rp 1.000,00
+
+2025-12-06 * Koperasi | Adem sari kaleng + Roti x2
+    expenses:makan:jajan     Rp 11.000,00
+    assets:cash             Rp -10.000,00
+    assets:receh             Rp -1.000,00
+
+2025-12-07 * Udin | Bakso pinggir kali
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
+2025-12-07 * Udin + Koperasi | Es Batu dll
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
 
