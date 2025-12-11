@@ -30,6 +30,35 @@
       ]
     ],
     [
+      "income:pondok:bendahara",
+      "income:pondok:bendahara",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -5000000,
+            "decimalPlaces": 2,
+            "floatingPoint": -50000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "income:transfer:ahkam",
       "income:transfer:ahkam",
       0,
@@ -122,9 +151,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -320600000,
+        "decimalMantissa": -325600000,
         "decimalPlaces": 2,
-        "floatingPoint": -3206000
+        "floatingPoint": -3256000
       },
       "astyle": {
         "ascommodityside": "L",

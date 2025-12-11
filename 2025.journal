@@ -414,6 +414,10 @@ D Rp 1.000,00
     liabilities:batir:anas     Rp 50.000,00
     assets:cash               Rp -50.000,00
 
+2025-12-02 * Dilah | Nyanguni dilah
+    expenses:dilah:sangu     Rp 200.000,00
+    assets:cash             Rp -200.000,00
+
 2025-12-03 * Self | Ahkam transfer go mbayar kitab
     income:transfer:ahkam    Rp -653.000,00
     assets:bank:bri           Rp 653.000,00
@@ -446,6 +450,52 @@ D Rp 1.000,00
     assets:cash             Rp -5.000,00
 
 2025-12-07 * Udin + Koperasi | Es Batu dll
+    expenses:makan:jajan     Rp 4.000,00
+    assets:cash             Rp -5.000,00
+    assets:receh             Rp 1.000,00
+
+2025-12-09 * Koperasi | Rok OSIS Dilah
+    expenses:dilah:sandang:rok osis     Rp 90.000,00
+    assets:cash                        Rp -90.000,00
+
+2025-12-09 * Convert BRI ke cash
+    assets:cash         Rp 300.000,00
+    assets:bank:bri    Rp -300.000,00
+
+2025-12-09 * Bakul Molen | Jajan: Molen go dilah
+    expenses:dilah:jajan     Rp 10.000,00
+    assets:cash             Rp -10.000,00
+
+2025-12-09 * Udin ambil duit lewat bri-ku
+    assets:cash         Rp 50.000,00
+    assets:bank:bri    Rp -50.000,00
+
+2025-12-09 * Dilah | Nyanguni dilah
+    expenses:dilah:sangu     Rp 200.000,00
+    assets:cash             Rp -200.000,00
+
+2025-12-09 * Penyesuaian Saldo (Recounting)
+    equity:recount     Rp 23.000,00
+    assets:cash       Rp -23.000,00
+
+2025-12-10 * Self | Anggaran kirim surat Guru Tugas
+    income:pondok:bendahara    Rp -50.000,00
+    assets:pondok               Rp 50.000,00
+
+2025-12-10 * J&T | Ongkos kirim surat Guru Tugas x3
+    expenses:pondok:surat GT     Rp 55.000,00
+    assets:pondok               Rp -50.000,00
+    assets:cash                  Rp -5.000,00
+
+2025-12-10 * Bakul Gorengan | Gorengan: Tahu, Cireng, Muntul
+    expenses:makan:jajan     Rp 10.000,00
+    assets:cash             Rp -10.000,00
+
+2025-12-10 * Bakul Es Teh Desa | Es teh x2
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
+
+2025-12-11 * Koperasi | Es batu, Chocolatos Matcha
+    expenses:makan:jajan     Rp 3.000,00
+    assets:cash             Rp -3.000,00
 
