@@ -495,7 +495,30 @@ D Rp 1.000,00
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
 
+2025-12-10 * Self | Doni aweh 500
+    income:hibah:batir      Rp -500,00
+    assets:receh             Rp 500,00
+
 2025-12-11 * Koperasi | Es batu, Chocolatos Matcha
     expenses:makan:jajan     Rp 3.000,00
     assets:cash             Rp -3.000,00
+
+2025-12-12 * Koperasi | Es batu, Chocolatos vanila
+    expenses:makan:jajan     Rp 4.000,00
+    assets:cash             Rp -4.000,00
+
+2025-12-13 * Koperasi | Mie Sedaap Cup soto, roti pizza x2, beng-beng, kripik basreng, pencukur jenggot
+    expenses:makan:jajan     Rp 31.000,00
+    assets:cash             Rp -31.000,00
+
+2025-12-13 * Telkomsel | Utang Shopee Pay kuota ku 28Gb, bapak 20Gb, mama 20Gb
+    expenses:kuota:telkomsel          Rp 50.000,00
+    expenses:kuota:bapak              Rp 50.000,00
+    expenses:kuota:mama               Rp 55.000,00
+    liabilities:shoppe pay:kuota    Rp -155.000,00
+
+2025-12-14 * Koperasi | Roti x2
+    expenses:makan:jajan     Rp 4.500,00
+    assets:receh               Rp 500,00
+    assets:cash             Rp -5.000,00
 

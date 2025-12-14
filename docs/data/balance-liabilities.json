@@ -28,6 +28,35 @@
           }
         }
       ]
+    ],
+    [
+      "liabilities:shoppe pay:kuota",
+      "liabilities:shoppe pay:kuota",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -15500000,
+            "decimalPlaces": 2,
+            "floatingPoint": -155000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
     ]
   ],
   [
@@ -35,9 +64,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 5000000,
+        "decimalMantissa": -10500000,
         "decimalPlaces": 2,
-        "floatingPoint": 50000
+        "floatingPoint": -105000
       },
       "astyle": {
         "ascommodityside": "L",

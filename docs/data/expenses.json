@@ -352,67 +352,67 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
+            "decimalMantissa": 15000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 150000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:kuota:mama",
+      "expenses:kuota:mama",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 29100000,
+            "decimalPlaces": 2,
+            "floatingPoint": 291000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:kuota:telkomsel",
+      "expenses:kuota:telkomsel",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
             "decimalMantissa": 10000000,
             "decimalPlaces": 2,
             "floatingPoint": 100000
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
-      "expenses:kuota:mama",
-      "expenses:kuota:mama",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": 23600000,
-            "decimalPlaces": 2,
-            "floatingPoint": 236000
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
-      "expenses:kuota:telkomsel",
-      "expenses:kuota:telkomsel",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": 5000000,
-            "decimalPlaces": 2,
-            "floatingPoint": 50000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -526,9 +526,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 22350000,
+            "decimalMantissa": 26300000,
             "decimalPlaces": 2,
-            "floatingPoint": 223500
+            "floatingPoint": 263000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -900,9 +900,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 293514400,
+        "decimalMantissa": 312964400,
         "decimalPlaces": 2,
-        "floatingPoint": 2935144
+        "floatingPoint": 3129644
       },
       "astyle": {
         "ascommodityside": "L",
