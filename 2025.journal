@@ -522,3 +522,38 @@ D Rp 1.000,00
     assets:receh               Rp 500,00
     assets:cash             Rp -5.000,00
 
+2025-12-15 * Udin | Es Teler Sawangan
+    expenses:makan:jajan     Rp 8.000,00
+    assets:cash             Rp -8.000,00
+
+2025-12-15 * Self | Transfer dari Mama
+    income:transfer:bri    Rp -1.000.000,00
+    assets:bank:bri         Rp 1.000.000,00
+
+2025-12-16 * Koperasi | Jajan: nasi bakar, fishcake ×2, lumpia
+    expenses:makan:jajan     Rp 9.000,00
+    assets:cash             Rp -9.000,00
+
+2025-12-16 * Convert BRI ke cash
+    assets:cash         Rp 400.000,00
+    assets:bank:bri    Rp -400.000,00
+
+2025-12-18 * Cak Yasin | Mie goreng
+    expenses:makan     Rp 12.000,00
+    assets:cash       Rp -12.000,00
+
+2025-12-18 * Koperasi | roti x3, permen kopiko, nabati panjang
+    expenses:makan:jajan     Rp 22.500,00
+    assets:cash             Rp -23.000,00
+    assets:receh                Rp 500,00
+
+2025-12-19 * Udin | Es Cau
+    expenses:makan:jajan     Rp 3.000,00
+    assets:receh            Rp -3.000,00
+
+2025-12-21 * Penyesuaian Saldo (Recounting)
+    assets:cash        Rp -52.000,00
+    assets:receh         Rp 1.000,00
+    assets:bank:bri     Rp -1.000,00
+    equity:recount      Rp 52.000,00
+
