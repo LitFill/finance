@@ -538,6 +538,10 @@ D Rp 1.000,00
     assets:cash         Rp 400.000,00
     assets:bank:bri    Rp -400.000,00
 
+2025-12-16 * Shoppe | Kitab Ahkam
+    liabilities:shoppe pay:kitab ahkam    Rp -993.000,00
+    equity:kredit shoppe pay               Rp 993.000,00
+
 2025-12-18 * Cak Yasin | Mie goreng
     expenses:makan     Rp 12.000,00
     assets:cash       Rp -12.000,00
