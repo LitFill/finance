@@ -146,6 +146,35 @@
       ]
     ],
     [
+      "expenses:donasi:hisap",
+      "expenses:donasi:hisap",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 30000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 300000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:hobi:arcaea:premium",
       "expenses:hobi:arcaea:premium",
       0,
@@ -526,9 +555,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 30550000,
+            "decimalMantissa": 32650000,
             "decimalPlaces": 2,
-            "floatingPoint": 305500
+            "floatingPoint": 326500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -674,6 +703,64 @@
             "decimalMantissa": 1000000,
             "decimalPlaces": 2,
             "floatingPoint": 10000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:ojan:sandang:sarung",
+      "expenses:ojan:sandang:sarung",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 6000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 60000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:ojan:sangu",
+      "expenses:ojan:sangu",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 2000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 20000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -900,9 +987,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 318414400,
+        "decimalMantissa": 358514400,
         "decimalPlaces": 2,
-        "floatingPoint": 3184144
+        "floatingPoint": 3585144
       },
       "astyle": {
         "ascommodityside": "L",

@@ -1,6 +1,35 @@
 [
   [
     [
+      "income:cash:ahkam",
+      "income:cash:ahkam",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -33100000,
+            "decimalPlaces": 2,
+            "floatingPoint": -331000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "income:hibah:batir",
       "income:hibah:batir",
       0,
@@ -180,9 +209,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -425650000,
+        "decimalMantissa": -458750000,
         "decimalPlaces": 2,
-        "floatingPoint": -4256500
+        "floatingPoint": -4587500
       },
       "astyle": {
         "ascommodityside": "L",

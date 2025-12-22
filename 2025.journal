@@ -542,6 +542,10 @@ D Rp 1.000,00
     liabilities:shoppe pay:kitab ahkam    Rp -993.000,00
     equity:kredit shoppe pay               Rp 993.000,00
 
+2025-12-17 * Koperasi | Jajan: Eskrim
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
 2025-12-18 * Cak Yasin | Mie goreng
     expenses:makan     Rp 12.000,00
     assets:cash       Rp -12.000,00
@@ -556,8 +560,28 @@ D Rp 1.000,00
     assets:receh            Rp -3.000,00
 
 2025-12-21 * Penyesuaian Saldo (Recounting)
-    assets:cash        Rp -52.000,00
+    assets:cash        Rp -47.000,00
     assets:receh         Rp 1.000,00
     assets:bank:bri     Rp -1.000,00
-    equity:recount      Rp 52.000,00
+    equity:recount      Rp 47.000,00
+
+2025-12-21 * Koperasi | Nukuna sarung go ojan
+    expenses:ojan:sandang:sarung     Rp 60.000,00
+    assets:cash                     Rp -60.000,00
+
+2025-12-21 * Ojan | Sangu go jajan
+    expenses:ojan:sangu     Rp 20.000,00
+    assets:cash            Rp -20.000,00
+
+2025-12-21 * Self | Ahkam transfer go mbayar kitab
+    income:cash:ahkam    Rp -331.000,00
+    assets:cash           Rp 331.000,00
+
+2025-12-21 * Aldi | Donasi acara Hisap
+    expenses:donasi:hisap     Rp 300.000,00
+    assets:bank:bri          Rp -300.000,00
+
+2025-12-22 * Koperasi | Jajan go sekretaris solawat: Capcin x2, kripik pedes x2, chiki2 x2
+    expenses:makan:jajan     Rp 16.000,00
+    assets:cash             Rp -16.000,00
 
