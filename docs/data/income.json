@@ -30,6 +30,35 @@
       ]
     ],
     [
+      "income:hibah",
+      "income:hibah",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -1000000,
+            "decimalPlaces": 2,
+            "floatingPoint": -10000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "income:hibah:batir",
       "income:hibah:batir",
       0,
@@ -209,9 +238,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -458750000,
+        "decimalMantissa": -459750000,
         "decimalPlaces": 2,
-        "floatingPoint": -4587500
+        "floatingPoint": -4597500
       },
       "astyle": {
         "ascommodityside": "L",
