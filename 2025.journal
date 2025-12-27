@@ -64,8 +64,8 @@ P 2025-12-25 memories  Rp 194,7941176470588
     equity:opening-balances    Rp -1.635.598,00  ; hledger akan mengisi selisihnya
 
 2025-10-02 * Transfer Kiriman
-    assets:bank:bri     Rp 500.000,
-    income:kiriman     Rp -500.000,
+    assets:bank:bri              Rp 500.000,
+    income:transfer:bri:mama    Rp -500.000,
 
 2025-10-03 * Mbayar Wisuda
     expenses:pendidikan:wisuda     Rp 500.000,
