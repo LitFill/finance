@@ -30,35 +30,6 @@
       ]
     ],
     [
-      "income:hibah",
-      "income:hibah",
-      0,
-      [
-        {
-          "acommodity": "Rp",
-          "acost": null,
-          "aquantity": {
-            "decimalMantissa": -1000000,
-            "decimalPlaces": 2,
-            "floatingPoint": -10000
-          },
-          "astyle": {
-            "ascommodityside": "L",
-            "ascommodityspaced": true,
-            "asdecimalmark": ",",
-            "asdigitgroups": [
-              ".",
-              [
-                3
-              ]
-            ],
-            "asprecision": 2,
-            "asrounding": "HardRounding"
-          }
-        }
-      ]
-    ],
-    [
       "income:hibah:batir",
       "income:hibah:batir",
       0,
@@ -67,9 +38,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": -50000,
+            "decimalMantissa": -1050000,
             "decimalPlaces": 2,
-            "floatingPoint": -500
+            "floatingPoint": -10500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -175,17 +146,17 @@
       ]
     ],
     [
-      "income:transfer:bri",
-      "income:transfer:bri",
+      "income:transfer:bri:lik hun",
+      "income:transfer:bri:lik hun",
       0,
       [
         {
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": -200000000,
+            "decimalMantissa": -40000000,
             "decimalPlaces": 2,
-            "floatingPoint": -2000000
+            "floatingPoint": -400000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -204,17 +175,17 @@
       ]
     ],
     [
-      "income:transfer:bri:lik hun",
-      "income:transfer:bri:lik hun",
+      "income:transfer:bri:mama",
+      "income:transfer:bri:mama",
       0,
       [
         {
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": -40000000,
+            "decimalMantissa": -200000000,
             "decimalPlaces": 2,
-            "floatingPoint": -400000
+            "floatingPoint": -2000000
           },
           "astyle": {
             "ascommodityside": "L",
