@@ -52,6 +52,10 @@ D Rp 1.000,00
 ~ monthly from 2025-12-17
     (expenses:langganan:streaming:olexa)     Rp 4.900,00
 
+;; Prices
+
+P 2025-12-25 memories  Rp 194,7941176470588
+
 ;; Transaction posts
 
 2025-10-01 * Saldo Awal (Initial Balance)
@@ -584,4 +588,32 @@ D Rp 1.000,00
 2025-12-22 * Koperasi | Jajan go sekretaris solawat: Capcin x2, kripik pedes x2, chiki2 x2
     expenses:makan:jajan     Rp 16.000,00
     assets:cash             Rp -16.000,00
+
+2025-12-23 * Lowiro | Arcaea Online resub
+    expenses:hobi:arcaea:premium     200 memories
+    assets:arcaea:memories          -200 memories
+
+2025-12-25 * Lowiro | 1020 memories through google
+    assets:arcaea:memories    1020 memories @@ Rp 198.690,00
+    assets:bank:bri                           Rp -198.690,00
+
+2025-12-25 * Lowiro | Arcaea chart Paranoid Arc by t+opazolite
+    expenses:hobi:arcaea:chart     100 memories
+    assets:arcaea:memories        -100 memories
+
+2025-12-26 * Lowiro | Arcaea pack Arcaea Next Stage
+    expenses:hobi:arcaea:chart     500 memories
+    assets:arcaea:memories        -500 memories
+
+2025-12-26 * Koperasi | Pencukur jenggot.
+    expenses:kamar:util     Rp 10.000,00
+    assets:cash            Rp -10.000,00
+
+2025-12-26 * Koperasi | Jajan: Frestea apel
+    expenses:makan:jajan     Rp 8.000,00
+    assets:cash             Rp -8.000,00
+
+2025-12-26 * Koperasi | Jajan: Lumpia ×2, dadar gulung ×2
+    expenses:makan:jajan     Rp 6.000,00
+    assets:cash             Rp -6.000,00
 

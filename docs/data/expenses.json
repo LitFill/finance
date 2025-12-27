@@ -175,6 +175,30 @@
       ]
     ],
     [
+      "expenses:hobi:arcaea:chart",
+      "expenses:hobi:arcaea:chart",
+      0,
+      [
+        {
+          "acommodity": "memories",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 600,
+            "decimalPlaces": 0,
+            "floatingPoint": 600
+          },
+          "astyle": {
+            "ascommodityside": "R",
+            "ascommodityspaced": true,
+            "asdecimalmark": ".",
+            "asdigitgroups": null,
+            "asprecision": 0,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "expenses:hobi:arcaea:premium",
       "expenses:hobi:arcaea:premium",
       0,
@@ -183,9 +207,9 @@
           "acommodity": "memories",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 200,
+            "decimalMantissa": 400,
             "decimalPlaces": 0,
-            "floatingPoint": 200
+            "floatingPoint": 400
           },
           "astyle": {
             "ascommodityside": "R",
@@ -288,6 +312,35 @@
     [
       "expenses:kamar:tisu",
       "expenses:kamar:tisu",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 10000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:kamar:util",
+      "expenses:kamar:util",
       0,
       [
         {
@@ -555,9 +608,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 32650000,
+            "decimalMantissa": 34050000,
             "decimalPlaces": 2,
-            "floatingPoint": 326500
+            "floatingPoint": 340500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -987,9 +1040,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 358514400,
+        "decimalMantissa": 360914400,
         "decimalPlaces": 2,
-        "floatingPoint": 3585144
+        "floatingPoint": 3609144
       },
       "astyle": {
         "ascommodityside": "L",
@@ -1009,9 +1062,9 @@
       "acommodity": "memories",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 200,
+        "decimalMantissa": 1000,
         "decimalPlaces": 0,
-        "floatingPoint": 200
+        "floatingPoint": 1000
       },
       "astyle": {
         "ascommodityside": "R",

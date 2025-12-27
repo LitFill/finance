@@ -9,9 +9,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 64300000,
+            "decimalMantissa": 61900000,
             "decimalPlaces": 2,
-            "floatingPoint": 643000
+            "floatingPoint": 619000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -67,9 +67,50 @@
           "acommodity": "memories",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 250,
+            "decimalMantissa": -550,
             "decimalPlaces": 0,
-            "floatingPoint": 250
+            "floatingPoint": -550
+          },
+          "astyle": {
+            "ascommodityside": "R",
+            "ascommodityspaced": true,
+            "asdecimalmark": ".",
+            "asdigitgroups": null,
+            "asprecision": 0,
+            "asrounding": "HardRounding"
+          }
+        },
+        {
+          "acommodity": "memories",
+          "acost": {
+            "contents": {
+              "acommodity": "Rp",
+              "acost": null,
+              "aquantity": {
+                "decimalMantissa": 198690,
+                "decimalPlaces": 0,
+                "floatingPoint": 198690
+              },
+              "astyle": {
+                "ascommodityside": "L",
+                "ascommodityspaced": true,
+                "asdecimalmark": ",",
+                "asdigitgroups": [
+                  ".",
+                  [
+                    3
+                  ]
+                ],
+                "asprecision": 2,
+                "asrounding": "HardRounding"
+              }
+            },
+            "tag": "TotalCost"
+          },
+          "aquantity": {
+            "decimalMantissa": 1020,
+            "decimalPlaces": 0,
+            "floatingPoint": 1020
           },
           "astyle": {
             "ascommodityside": "R",
@@ -91,9 +132,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 39151200,
+            "decimalMantissa": 19282200,
             "decimalPlaces": 2,
-            "floatingPoint": 391512
+            "floatingPoint": 192822
           },
           "astyle": {
             "ascommodityside": "L",
@@ -146,9 +187,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 108539000,
+        "decimalMantissa": 86270000,
         "decimalPlaces": 2,
-        "floatingPoint": 1085390
+        "floatingPoint": 862700
       },
       "astyle": {
         "ascommodityside": "L",
@@ -168,9 +209,50 @@
       "acommodity": "memories",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 250,
+        "decimalMantissa": -550,
         "decimalPlaces": 0,
-        "floatingPoint": 250
+        "floatingPoint": -550
+      },
+      "astyle": {
+        "ascommodityside": "R",
+        "ascommodityspaced": true,
+        "asdecimalmark": ".",
+        "asdigitgroups": null,
+        "asprecision": 0,
+        "asrounding": "HardRounding"
+      }
+    },
+    {
+      "acommodity": "memories",
+      "acost": {
+        "contents": {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 198690,
+            "decimalPlaces": 0,
+            "floatingPoint": 198690
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        },
+        "tag": "TotalCost"
+      },
+      "aquantity": {
+        "decimalMantissa": 1020,
+        "decimalPlaces": 0,
+        "floatingPoint": 1020
       },
       "astyle": {
         "ascommodityside": "R",
