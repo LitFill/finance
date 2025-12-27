@@ -546,6 +546,10 @@ P 2025-12-25 memories  Rp 194,7941176470588
     liabilities:shoppe pay:kitab ahkam    Rp -993.000,00
     equity:kredit shoppe pay               Rp 993.000,00
 
+2025-12-16 * YouTube | Langganan Channel Olexa
+    expenses:langganan:streaming:olexa     Rp 5.439,00
+    assets:bank:dana                      Rp -5.439,00
+
 2025-12-17 * Koperasi | Jajan: Eskrim
     expenses:makan:jajan     Rp 5.000,00
     assets:cash             Rp -5.000,00
@@ -601,6 +605,14 @@ P 2025-12-25 memories  Rp 194,7941176470588
     expenses:hobi:arcaea:chart     100 memories
     assets:arcaea:memories        -100 memories
 
+2025-12-25 * Telkomsel | Kuota mama.
+    expenses:kuota:mama     Rp 50.000,00
+    assets:bank:bri        Rp -50.000,00
+
+2025-12-25 * Udin | Utang 50k shopeepay
+    liabilities:batir:udin     Rp 50.000,00
+    assets:bank:bri           Rp -50.000,00
+
 2025-12-26 * Lowiro | Arcaea pack Arcaea Next Stage
     expenses:hobi:arcaea:chart     500 memories
     assets:arcaea:memories        -500 memories
@@ -617,8 +629,20 @@ P 2025-12-25 memories  Rp 194,7941176470588
     expenses:makan:jajan     Rp 6.000,00
     assets:cash             Rp -6.000,00
 
+2025-12-27 * Bakul Ketoprak | ketoprak + tahu
+    expenses:makan:jajan     Rp 6.000,00
+    assets:cash             Rp -6.000,00
+
+2025-12-27 * Bakul Loundry | Loundry x2
+    expenses:sandang:loundry     Rp 11.000,00
+    assets:cash                 Rp -11.000,00
+
 2025-12-27 * Self | Hibah Rifai
     assets:cash       Rp 9.000,00
     assets:receh      Rp 1.000,00
     income:hibah    Rp -10.000,00
+
+2025-12-27 * Penyesuaian Saldo (Recounting)
+    assets:cash       Rp -32.000,00
+    equity:recount     Rp 32.000,00
 
