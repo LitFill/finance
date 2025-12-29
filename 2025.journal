@@ -647,3 +647,27 @@ P 2025-12-25 memories  Rp 194,7941176470588
     assets:receh          Rp 500,00
     equity:recount     Rp 31.500,00
 
+2025-12-28 * Cuci Motor Depan Alfa | Cuci motor
+    expenses:motor:cuci     Rp 15.000,00
+    assets:cash            Rp -15.000,00
+
+2025-12-28 * Koperasi | Es batu x2, Chocolatos vanila
+    expenses:makan:jajan     Rp 2.000,00
+    assets:receh             Rp 1.000,00
+    assets:cash             Rp -3.000,00
+
+2025-12-29 * Niki Motors | Servis motor Vario merah
+    expenses:motor:servis:cvt            Rp 40.000,00
+    expenses:motor:oli:mesin:enduro      Rp 53.000,00
+    expenses:motor:oli:gardan:ahm        Rp 20.000,00
+    expenses:motor:radiator:air          Rp 15.000,00
+    assets:cash                        Rp -128.000,00
+
+2025-12-29 * Nasi Padang | Makan: Rendang, krupuk
+    expenses:makan     Rp 19.000,00
+    assets:cash       Rp -19.000,00
+
+2025-12-29 * Self | Hibah Bayu
+    income:hibah:batir    Rp -10.000,00
+    assets:cash            Rp 10.000,00
+

@@ -579,9 +579,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 11300000,
+            "decimalMantissa": 13200000,
             "decimalPlaces": 2,
-            "floatingPoint": 113000
+            "floatingPoint": 132000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -637,9 +637,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 34650000,
+            "decimalMantissa": 34850000,
             "decimalPlaces": 2,
-            "floatingPoint": 346500
+            "floatingPoint": 348500
           },
           "astyle": {
             "ascommodityside": "L",
@@ -782,9 +782,125 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": 1000000,
+            "decimalMantissa": 2500000,
             "decimalPlaces": 2,
-            "floatingPoint": 10000
+            "floatingPoint": 25000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:motor:oli:gardan:ahm",
+      "expenses:motor:oli:gardan:ahm",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 2000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 20000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:motor:oli:mesin:enduro",
+      "expenses:motor:oli:mesin:enduro",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 5300000,
+            "decimalPlaces": 2,
+            "floatingPoint": 53000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:motor:radiator:air",
+      "expenses:motor:radiator:air",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 1500000,
+            "decimalPlaces": 2,
+            "floatingPoint": 15000
+          },
+          "astyle": {
+            "ascommodityside": "L",
+            "ascommodityspaced": true,
+            "asdecimalmark": ",",
+            "asdigitgroups": [
+              ".",
+              [
+                3
+              ]
+            ],
+            "asprecision": 2,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
+      "expenses:motor:servis:cvt",
+      "expenses:motor:servis:cvt",
+      0,
+      [
+        {
+          "acommodity": "Rp",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": 4000000,
+            "decimalPlaces": 2,
+            "floatingPoint": 40000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -1069,9 +1185,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": 368158300,
+        "decimalMantissa": 384558300,
         "decimalPlaces": 2,
-        "floatingPoint": 3681583
+        "floatingPoint": 3845583
       },
       "astyle": {
         "ascommodityside": "L",
