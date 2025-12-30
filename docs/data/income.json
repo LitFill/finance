@@ -1,6 +1,30 @@
 [
   [
     [
+      "income:arcaea:memories",
+      "income:arcaea:memories",
+      0,
+      [
+        {
+          "acommodity": "memories",
+          "acost": null,
+          "aquantity": {
+            "decimalMantissa": -450,
+            "decimalPlaces": 0,
+            "floatingPoint": -450
+          },
+          "astyle": {
+            "ascommodityside": "R",
+            "ascommodityspaced": true,
+            "asdecimalmark": ".",
+            "asdigitgroups": null,
+            "asprecision": 0,
+            "asrounding": "HardRounding"
+          }
+        }
+      ]
+    ],
+    [
       "income:cash:ahkam",
       "income:cash:ahkam",
       0,
@@ -154,9 +178,9 @@
           "acommodity": "Rp",
           "acost": null,
           "aquantity": {
-            "decimalMantissa": -250000000,
+            "decimalMantissa": -310000000,
             "decimalPlaces": 2,
-            "floatingPoint": -2500000
+            "floatingPoint": -3100000
           },
           "astyle": {
             "ascommodityside": "L",
@@ -180,9 +204,9 @@
       "acommodity": "Rp",
       "acost": null,
       "aquantity": {
-        "decimalMantissa": -460750000,
+        "decimalMantissa": -520750000,
         "decimalPlaces": 2,
-        "floatingPoint": -4607500
+        "floatingPoint": -5207500
       },
       "astyle": {
         "ascommodityside": "L",
@@ -195,6 +219,23 @@
           ]
         ],
         "asprecision": 2,
+        "asrounding": "HardRounding"
+      }
+    },
+    {
+      "acommodity": "memories",
+      "acost": null,
+      "aquantity": {
+        "decimalMantissa": -450,
+        "decimalPlaces": 0,
+        "floatingPoint": -450
+      },
+      "astyle": {
+        "ascommodityside": "R",
+        "ascommodityspaced": true,
+        "asdecimalmark": ".",
+        "asdigitgroups": null,
+        "asprecision": 0,
         "asrounding": "HardRounding"
       }
     }
