@@ -1,0 +1,64 @@
+account assets       ; type:A, money you own. 2+ spaces are required before the ;.
+account liabilities  ; type:L, money you owe to others
+account equity       ; type:E, equal to A - L (not used much in personal finance)
+account income       ; type:R, revenue/income categories
+account expenses     ; type:X, expenses categories
+
+account assets:cash   ; type:C
+account assets:receh  ; type:C
+
+commodity $1000.00
+commodity Rp 1.000,00
+commodity 1000. memories
+
+D Rp 1.000,00
+
+;; Budgets and Forecasts
+
+~ daily
+    (expenses:makan:jajan)  Rp 5.000,00
+
+~ weekly
+    (expenses:makan)  Rp 50.000,00
+
+~ monthly
+    (expenses:kuota:telkomsel)      Rp 50.000,00
+    (expenses:kuota:mama)           Rp 65.000,00
+    (expenses:kuota:bapak)          Rp 50.000,00
+
+~ monthly from 2025-11-20
+    (expenses:bank:bri:admin fee)     Rp 1.000,00
+
+~ monthly from 2025-11-23
+    (expenses:hobi:arcaea:premium)   200 memories
+
+~ yearly from 2026-10-11
+    (expenses:langganan:google_one)     Rp 145.000,00
+
+~ monthly from 2025-12-02
+    (expenses:langganan:streaming:nakiri_ayame)     Rp 39.900,00
+
+~ monthly from 2025-12-11
+    (expenses:langganan:streaming:youtube_premium)     Rp 69.000,00
+
+~ monthly from 2025-12-17
+    (expenses:langganan:streaming:olexa)     Rp 4.900,00
+
+;; Prices
+
+P 2025-12-25 memories  Rp 194,7941176470588
+
+;; Includes
+
+include 2025.journal
+
+;; Transaction posts
+
+2026-01-01 * Self | Hadiah New Year dari Lowiro
+    assets:arcaea:memories     100 memories
+    income:lowiro:memories    -100 memories
+
+2026-01-02 * Self | Anggaran untuk Sekretaris Solawatan
+    assets:cash                       Rp 50.000,00
+    income:pondok:panitia solawat    Rp -50.000,00
+

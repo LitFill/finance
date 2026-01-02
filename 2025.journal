@@ -680,3 +680,15 @@ P 2025-12-25 memories  Rp 194,7941176470588
     assets:bank:bri              Rp 600.000,00
     income:transfer:bri:mama    Rp -600.000,00
 
+
+2025-12-31 * Bakul Molen | Jajan: Molen go dilah
+    expenses:dilah:jajan     Rp 10.000,00
+    assets:cash             Rp -10.000,00
+
+2025-12-31 * Dilah | Nyanguni dilah
+    expenses:dilah:sangu     Rp 200.000,00
+    assets:cash             Rp -200.000,00
+
+2025-12-31 * Lowiro | Arcaea chart Subsphere in Eclesion by 窓辺リカ (Madobe Rika)
+    expenses:hobi:arcaea:chart     100 memories
+    assets:arcaea:memories        -100 memories
