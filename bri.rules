@@ -1,0 +1,97 @@
+# hledger rules for BRI e-Statement (BRImo)
+
+skip 1
+
+fields id, norek, date, date2, jam, seq, desc_tran, initial_bal, debit, credit, final_bal, sign, user, code_tran, code_teller, trremk, tlbds1, tlbds2, description
+
+date-format %Y-%m-%d %H:%M:%S
+
+currency Rp
+
+account1 assets:bank:bri
+
+amount-in     %credit
+amount-out    %debit
+
+# --- Automated Categorization ---
+
+# 1. Default fallback
+if %debit [1-9]
+    account2 expenses:unknown
+
+if %credit [1-9]
+    account2 income:unknown
+
+# 2. QRIS
+if %description ^QRIS
+    account2 expenses:makan:jajan
+
+if %description ^RFQRRS
+    account2 expenses:makan:jajan
+
+# 3. Incoming Transfers
+if %description Transfer Dari
+    account2 income:transfer:bri
+
+if %desc_tran FROM .* TO MUHAMMAD FAKHR
+    account2 income:transfer:bri
+
+# 4. Outgoing Transfers
+if %description Transfer (Ke|BI-Fast ke)
+    account2 expenses:transfer
+
+# 5. Top Up DANA
+if %description (Top Up DANA|^DANA)
+    account2 assets:bank:dana
+
+if %desc_tran ^DANA
+    account2 assets:bank:dana
+
+# 6. Mobile Data / Credit / Pulsa
+if %description (Pembelian Pulsa|Aplikasi By U)
+    account2 expenses:komunikasi:kuota
+
+if %desc_tran (Pembelian Pulsa|Aplikasi By U)
+    account2 expenses:komunikasi:kuota
+
+# 7. Shopee / SPayLater
+if %description (SPayLater|SHOPEE)
+    account2 expenses:belanja:shopee
+
+if %description SPayLater
+    account2 liabilities:shopee:paylater
+
+# 8. BRIVA
+if %description Pembayaran BRIVA
+    account2 expenses:pembayaran
+
+# 9. Admin Fees
+if %description Admin Fee
+    account2 expenses:bank:bri:admin fee
+
+# 10. BI-Fast Fee (Surgical match by amount)
+if %debit ^2500(\.00)?$
+if %description Transfer BI-Fast ke
+    account2 expenses:bank:bri:admin fee
+
+# --- Clean up description ---
+
+description %description
+
+if %description ^$
+    description %desc_tran
+
+if %description (.*) via BRImo
+    description \1
+
+if %description (.*) ESB:.*
+    description \1
+
+if %description FROM ([^ ]+) .* TO MUHAMMAD FAKHR
+    description Transfer Dari \1
+
+if %description ^(QRIS[A-Z0-9#]+) .*
+    description \1
+
+if %description ^(RFQRRS[A-Z0-9#_]+) .*
+    description Refund \1
