@@ -29,17 +29,17 @@ D Rp 1.000,00
 ~ monthly from 2025-11-20
     (expenses:bank:bri:admin fee)     Rp 1.000,00
 
-~ monthly from 2025-11-23
-    (expenses:hobi:arcaea:premium)   200 memories
+;; ~ monthly from 2025-11-23
+;;     (expenses:hobi:arcaea:premium)   200 memories
 
 ~ yearly from 2026-10-11
     (expenses:langganan:google_one)     Rp 145.000,00
 
-~ monthly from 2025-12-02
-    (expenses:langganan:streaming:nakiri_ayame)     Rp 39.900,00
+;; ~ monthly from 2025-12-02
+;;     (expenses:langganan:streaming:nakiri_ayame)     Rp 39.900,00
 
-~ monthly from 2025-12-11
-    (expenses:langganan:streaming:youtube_premium)     Rp 69.000,00
+;; ~ monthly from 2025-12-11
+;;     (expenses:langganan:streaming:youtube_premium)     Rp 69.000,00
 
 ~ monthly from 2025-12-17
     (expenses:langganan:streaming:olexa)     Rp 4.900,00
