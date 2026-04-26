@@ -183,12 +183,12 @@ include 2025.journal
     income:transfer:bri    Rp -14.000,00
 
 2026-02-08=2026-02-08 DANA20260208029382964799TEGUHPRAYITN
-    assets:bank:bri      Rp 80.000,00
-    assets:bank:dana    Rp -80.000,00
+    assets:bank:bri     Rp 80.000,00
+    income:transfer    Rp -80.000,00
 
 2026-02-08=2026-02-08 DANA20260208029444695721SITISHOFIYAT
-    assets:bank:bri      Rp 43.500,00
-    assets:bank:dana    Rp -43.500,00
+    assets:bank:bri     Rp 43.500,00
+    income:transfer    Rp -43.500,00
 
 2026-02-10=2026-02-10 Transfer BI-Fast dari BANK NEGARA INDONESIA - PT (PERSERO - AHMAD ZAENUD
     assets:bank:bri     Rp 50.000,00
@@ -239,8 +239,8 @@ include 2025.journal
     expenses:makan:jajan     Rp 15.000,00
 
 2026-03-12=2026-03-12 DANA20260312030261081482YONGKITRIYON
-    assets:bank:bri      Rp 267.000,00
-    assets:bank:dana    Rp -267.000,00
+    assets:bank:bri     Rp 267.000,00
+    income:transfer    Rp -267.000,00
 
 2026-03-13=2026-03-13 QRISRNS108738213538#9360000210047420960
     assets:bank:bri         Rp -55.000,00
@@ -323,8 +323,8 @@ include 2025.journal
     expenses:makan:jajan     Rp 55.000,00
 
 2026-04-04=2026-04-04 DANA20260404030837145225AJILEKSANAPU
-    assets:bank:bri      Rp 50.000,00
-    assets:bank:dana    Rp -50.000,00
+    assets:bank:bri     Rp 50.000,00
+    income:transfer    Rp -50.000,00
 
 2026-04-04=2026-04-04 Transfer Dari Siti Khomsatun
     assets:bank:bri         Rp 109.000,00
@@ -409,4 +409,24 @@ include 2025.journal
 2026-04-22=2026-04-22 Transfer Dari Lutfi Anas
     assets:bank:bri         Rp 25.000,00
     income:transfer:bri    Rp -25.000,00
+
+2026-04-25 Vivo | Ganti Baterai Hape Dilah
+    expenses:dilah:hape:baterai     Rp 200.000,00
+    assets:bank:bri                Rp -200.000,00
+
+2026-04-25 Irfan | Tukar duit bri dan cash
+    expenses:admin:irfan       Rp 5.000,00
+    assets:cash              Rp 300.000,00
+    assets:bank:bri         Rp -305.000,00
+
+2026-04-26 Kuota Dilah (im3: 3gb)
+    expenses:dilah:kuota     Rp 15.000,00
+    assets:bank:bri         Rp -15.000,00
+
+2026-04-26 Recounting
+    assets:cash               Rp -122.000,00
+    assets:receh                Rp 11.000,00
+    assets:arcaea:memories     -380 memories
+    equity:recount             Rp 111.000,00
+    equity:recount              380 memories
 
