@@ -59,8 +59,8 @@
       ]
     ],
     [
-      "liabilities:shoppe pay:kitab ahkam",
-      "liabilities:shoppe pay:kitab ahkam",
+      "liabilities:shopee pay:kitab ahkam",
+      "liabilities:shopee pay:kitab ahkam",
       0,
       [
         {
@@ -88,8 +88,8 @@
       ]
     ],
     [
-      "liabilities:shoppe pay:kuota",
-      "liabilities:shoppe pay:kuota",
+      "liabilities:shopee pay:kuota",
+      "liabilities:shopee pay:kuota",
       0,
       [
         {

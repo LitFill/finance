@@ -47,6 +47,7 @@ D Rp 1.000,00
 ;; Prices
 
 P 2025-12-25 memories  Rp 194,7941176470588
+P 2026-03-15 memories  Rp 194,7941176470588
 
 ;; Includes
 
@@ -246,13 +247,17 @@ include 2025.journal
     assets:bank:bri         Rp -55.000,00
     expenses:makan:jajan     Rp 55.000,00
 
-2026-03-15=2026-03-15 QRISRNS109964126795#9360000210047420960
-    assets:bank:bri         Rp -198.690,00
-    expenses:makan:jajan     Rp 198.690,00
+2026-03-15 Lowiro | 1020 memories through google
+    assets:arcaea:memories    1020 memories @@ Rp 198.690,00
+    assets:bank:bri                           Rp -198.690,00
 
 2026-03-16=2026-03-16 Transfer BI-Fast dari BANK MANDIRI (PERSERO), PT - MUSTOLIH
     assets:bank:bri     Rp 37.000,00
     income:unknown     Rp -37.000,00
+
+2026-03-16 Lowiro | Arcaea pack ???
+    assets:arcaea:memories        -1020 memories
+    expenses:hobi:arcaea:chart     1020 memories
 
 2026-03-18=2026-03-18 Transfer BI-Fast dari BANK CENTRAL ASIA - GESANG BUDIO
     assets:bank:bri     Rp 203.000,00
@@ -410,23 +415,40 @@ include 2025.journal
     assets:bank:bri         Rp 25.000,00
     income:transfer:bri    Rp -25.000,00
 
-2026-04-25 Vivo | Ganti Baterai Hape Dilah
+2026-04-25 * Vivo | Ganti Baterai Hape Dilah
     expenses:dilah:hape:baterai     Rp 200.000,00
     assets:bank:bri                Rp -200.000,00
 
-2026-04-25 Irfan | Tukar duit bri dan cash
+2026-04-25 * Irfan | Tukar duit bri dan cash
     expenses:admin:irfan       Rp 5.000,00
     assets:cash              Rp 300.000,00
     assets:bank:bri         Rp -305.000,00
 
-2026-04-26 Kuota Dilah (im3: 3gb)
+2026-04-26 * Kuota Dilah (im3: 3gb)
     expenses:dilah:kuota     Rp 15.000,00
     assets:bank:bri         Rp -15.000,00
 
-2026-04-26 Recounting
-    assets:cash               Rp -122.000,00
-    assets:receh                Rp 11.000,00
-    assets:arcaea:memories     -380 memories
-    equity:recount             Rp 111.000,00
-    equity:recount              380 memories
+2026-04-26 * Lowiro | Recounting arcaea memories
+    expenses:hobi:arcaea:premium     380 memories
+    assets:arcaea:memories          -380 memories
+
+2026-04-26 * Perhitungan hutang all neutral
+    liabilities:shopee pay:kitab ahkam       Rp 993.000,00
+    liabilities:shopee pay:kuota             Rp 155.000,00
+    liabilities:batir:udin                   Rp -50.000,00
+    liabilities:batir:anas                   Rp -50.000,00
+    income:hutang                         Rp -1.048.000,00
+
+2026-04-26 * Recounting
+    assets:cash       Rp -122.000,00
+    assets:receh        Rp 11.000,00
+    equity:recount     Rp 111.000,00
+
+2026-04-28 * Self | Bisyaroh UKM Coding April 2026
+    assets:cash                    Rp 150.000,00
+    income:bisyaroh:ukm coding    Rp -150.000,00
+
+2026-04-28 * Istiqlal | Kitab Idhohul Mubham syarah Sullamul Munawroq
+    assets:cash                  Rp -24.000,00
+    expenses:pendidikan:kitab     Rp 24.000,00
 
