@@ -10,6 +10,7 @@ account assets:receh  ; type:C
 commodity $1000.00
 commodity Rp 1.000,00
 commodity 1000. memories
+commodity 1.000,00 mgEmas
 
 D Rp 1.000,00
 
@@ -48,6 +49,11 @@ D Rp 1.000,00
 
 P 2025-12-25 memories  Rp 194,7941176470588
 P 2026-03-15 memories  Rp 194,7941176470588
+P 2026-01-17 mgEmas    Rp 2.602,00
+P 2026-01-21 mgEmas    Rp 2.747,00
+P 2026-01-23 mgEmas    Rp 2.819,00
+P 2026-03-22 mgEmas    Rp 2.829,00
+P 2026-04-29 mgEmas    Rp 2.693,00
 
 ;; Includes
 
@@ -66,6 +72,10 @@ include 2025.journal
 2026-01-02=2026-01-02 Top Up DANA 0823xxxx243 082325865
     assets:bank:bri     Rp -50.000,00
     assets:bank:dana     Rp 50.000,00
+
+2026-01-02 Google | Langganan YT Nakiri Ayame
+    expenses:langganan:streaming:nakiri_ayame     Rp 44.289,00
+    assets:bank:dana                             Rp -44.289,00
 
 2026-01-03=2026-01-03 QRISRNS955147897896#9360000210047420960
     assets:bank:bri         Rp -50.000,00
@@ -124,12 +134,16 @@ include 2025.journal
     income:transfer:bri    Rp -144.000,00
 
 2026-01-16=2026-01-16 Top Up DANA 0856xxxx790 085601351
-    assets:bank:bri     Rp -20.000,00
-    assets:bank:dana     Rp 20.000,00
+    assets:bank:bri    Rp -20.000,00
+    equity:unknown      Rp 20.000,00
+
+2026-01-16 YouTube | Langganan Channel Olexa
+    expenses:langganan:streaming:olexa     Rp 5.439,00
+    assets:bank:dana                      Rp -5.439,00
 
 2026-01-17=2026-01-17 OEMAS3301011804020002NBMB961949518734
-    assets:bank:bri     Rp -100.000,00
-    expenses:unknown     Rp 100.000,00
+    assets:bank:bri    Rp -100.000,00 @@ 38,5 mgEmas
+    assets:emas:bri                      38,5 mgEmas
 
 2026-01-17=2026-01-17 QRISRNS961989177273#9360000210047420960
     assets:bank:bri         Rp -55.000,00
@@ -140,12 +154,12 @@ include 2025.journal
     expenses:bank:bri:admin fee     Rp 1.000,00
 
 2026-01-21=2026-01-21 BEMAS1364826620000642NBMB964024864233
-    assets:bank:bri     Rp -31.590,00
-    expenses:unknown     Rp 31.590,00
+    assets:bank:bri    Rp -31.590,00 @@ 11,5 mgEmas
+    assets:emas:bri                     11,5 mgEmas
 
 2026-01-23=2026-01-23 BEMAS1364826620000642NBMB964868988316
-    assets:bank:bri     Rp -28.190,00
-    expenses:unknown     Rp 28.190,00
+    assets:bank:bri    Rp -28.190,00 @@ 10 mgEmas
+    assets:emas:bri                     10 mgEmas
 
 2026-02-01=2026-02-01 Transfer BI-Fast dari BANK NEGARA INDONESIA - PT (PERSERO - AHMAD ZAENUD
     assets:bank:bri     Rp 300.000,00
@@ -203,6 +217,10 @@ include 2025.journal
     assets:bank:bri         Rp -15.000,00
     expenses:makan:jajan     Rp 15.000,00
 
+2026-02-16 YouTube | Langganan Channel Olexa
+    expenses:langganan:streaming:olexa     Rp 5.439,00
+    assets:bank:dana                      Rp -5.439,00
+
 2026-02-18=2026-02-18 Transfer Dari Lutfi Anas
     assets:bank:bri         Rp 11.000,00
     income:transfer:bri    Rp -11.000,00
@@ -259,6 +277,10 @@ include 2025.journal
     assets:arcaea:memories        -1020 memories
     expenses:hobi:arcaea:chart     1020 memories
 
+2026-03-16 YouTube | Langganan Channel Olexa
+    expenses:langganan:streaming:olexa     Rp 5.439,00
+    assets:bank:dana                      Rp -5.439,00
+
 2026-03-18=2026-03-18 Transfer BI-Fast dari BANK CENTRAL ASIA - GESANG BUDIO
     assets:bank:bri     Rp 203.000,00
     income:unknown     Rp -203.000,00
@@ -292,8 +314,8 @@ include 2025.journal
     expenses:transfer     Rp 102.000,00
 
 2026-03-22=2026-03-22 BEMAS1364826620000642NBMB113882370584
-    assets:bank:bri     Rp -10.000,00
-    expenses:unknown     Rp 10.000,00
+    assets:bank:bri    Rp -10.000,00 @@ 3,6 mgEmas
+    assets:emas:bri                     3,6 mgEmas
 
 2026-03-23=2026-03-23 200001012_OB_1055748378136125
     assets:bank:bri     Rp 102.000,00
@@ -310,6 +332,10 @@ include 2025.journal
 2026-03-28=2026-03-28 Pembayaran BRIVA ke PT Finnet Indonesia - Aplikasi By U - 1094300013946193 - Jajan6GB3Hari
     assets:bank:bri        Rp -17.599,00
     expenses:pembayaran     Rp 17.599,00
+
+2026-03-30 Microsoft | Langganan OneDrive
+    expenses:langganan:microsoft:onedrive     Rp 17.760,00
+    assets:bank:dana                         Rp -17.760,00
 
 2026-03-31=2026-03-31 Pembayaran BRIVA ke PT Finnet Indonesia - Aplikasi By U - 1094300013994887 - Kaget7GB30Hari
     assets:bank:bri        Rp -38.000,00
@@ -379,6 +405,10 @@ include 2025.journal
     assets:bank:bri         Rp -18.870,00
     expenses:makan:jajan     Rp 18.870,00
 
+2026-04-16 YouTube | Langganan Channel Olexa
+    expenses:langganan:streaming:olexa     Rp 5.439,00
+    assets:bank:dana                      Rp -5.439,00
+
 2026-04-17=2026-04-17 RFQRRS1nmdrpg02364_00210116453383_160426
     assets:bank:bri          Rp 18.870,00
     expenses:makan:jajan    Rp -18.870,00
@@ -387,7 +417,7 @@ include 2025.journal
     assets:bank:bri      Rp -350.000,00
     expenses:transfer     Rp 350.000,00
 
-2026-04-18=2026-04-18 Pembayaran BRIVA ke SHOPEE - 128085111304115 - rXXXXX4
+2026-04-18=2026-04-18 Pembayaran BRIVA ke SHOPEE - 128xxxxxxxx4115 - rXXXXX4
     assets:bank:bri        Rp -54.490,00
     expenses:pembayaran     Rp 54.490,00
 
@@ -451,4 +481,63 @@ include 2025.journal
 2026-04-28 * Istiqlal | Kitab Idhohul Mubham syarah Sullamul Munawroq
     assets:cash                  Rp -24.000,00
     expenses:pendidikan:kitab     Rp 24.000,00
+
+2026-04-28 * Dilah | Nyanguni dilah
+    expenses:dilah:sangu     Rp 400.000,00
+    assets:cash             Rp -400.000,00
+
+2026-04-29 * Udin | Tukar duit bri dan cash
+    assets:cash         Rp 170.000,00
+    assets:bank:bri    Rp -170.000,00
+
+2026-04-29 * Koperasi | Es batu x2, Chocolatos vanila
+    expenses:makan:jajan     Rp 2.000,00
+    assets:cash             Rp -2.000,00
+
+2026-04-29 * BRI | Beli emas bri
+    assets:bank:bri    Rp -10.000,00 @@ 3,8 mgEmas
+    assets:emas:bri                     3,8 mgEmas
+
+2026-04-30 * Bakul Es depan MU | Es Nangka
+    expenses:makan:jajan     Rp 5.000,00
+    assets:cash             Rp -5.000,00
+
+2026-04-30 * Transfer BRI -> BNI awal
+    assets:bank:bni                 Rp 50.000,00
+    expenses:bank:bri:admin fee      Rp 2.500,00
+    assets:bank:bri                Rp -52.500,00
+
+2026-04-30 * Bakul Loundry | Loundry minggu 17
+    expenses:sandang:loundry     Rp 23.000,00
+    assets:cash                 Rp -23.000,00
+
+2026-04-30 * BNI | Biaya admin kartu, admin rekening, dan denda
+    expenses:bank:bni:admin rekening     Rp 11.000,00
+    expenses:bank:bni:admin kartu        Rp 10.000,00
+    expenses:bank:bni:denda               Rp 5.000,00
+    assets:bank:bni                     Rp -26.000,00
+
+2026-05-01 * Self | Zila bayar hutang bayar TOAFL
+    assets:bank:bni              Rp 190.000,00
+    income:hutang:batir:zila    Rp -190.000,00
+
+2026-05-01 * Self | Bisyaroh mengajar PDF Andalusia April
+    assets:bank:bni         Rp 200.000,00
+    income:bisyaroh:pdf    Rp -200.000,00
+
+2026-05-01 Shopee | Sensor TPS gas motor Vario
+    expenses:motor:hardware:sensor tps     Rp 99.130,00
+    assets:bank:bri                       Rp -99.130,00
+
+2026-05-01 Koperasi | ImCoCo
+    expenses:makan:jajan     Rp 8.000,00
+    assets:cash             Rp -8.000,00
+
+2026-05-02 Self | Hibah dan nemu duit
+    assets:cash            Rp 14.000,00
+    income:hibah:batir    Rp -14.000,00
+
+2222-04-30 ! Belum Akurat
+    assets:cash              Rp -30.000,00
+    equity:belum tercatat     Rp 30.000,00
 
